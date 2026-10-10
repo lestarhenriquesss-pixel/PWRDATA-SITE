@@ -5,13 +5,7 @@
       <stop offset=".48" stop-color="#e4bea2" stop-opacity=".62"/>
       <stop offset="1" stop-color="#fffaf2" stop-opacity=".85"/>
     </linearGradient>
-    <linearGradient id="footer-crest" x1="0" y1="24" x2="0" y2="160" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#fffaf2"/>
-      <stop offset=".46" stop-color="#fffaf2"/>
-      <stop offset=".78" stop-color="#f3ede3"/>
-      <stop offset="1" stop-color="#e6dfd3"/>
-    </linearGradient>
   </defs>
   <path fill="url(#footer-valley)" d="M0 60 C176 0 350 6 554 58 C738 107 872 129 1054 70 C1198 22 1327 11 1440 35 L1440 160 L0 160 Z"/>
-  <path fill="url(#footer-crest)" d="M0 76 C176 14 350 20 554 75 C738 124 872 146 1054 86 C1198 38 1327 27 1440 52 L1440 160 L0 160 Z"/>
+  <path fill="#fffaf2" d="M0 76 C176 14 350 20 554 75 C738 124 872 146 1054 86 C1198 38 1327 27 1440 52 L1440 160 L0 160 Z"/>
 </svg>
