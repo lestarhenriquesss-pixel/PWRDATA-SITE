@@ -1,0 +1,53 @@
+/* The original straight seam is the default, including explicit straight mode. */
+.footer-transition {
+  display: none;
+}
+
+body[data-footer-transition="wave"] #contato {
+  --footer-wave-height: clamp(64px, 8vw, 128px);
+  --footer-wave-clearance: 40px;
+}
+
+/* V6 uses 88px below a desktop section. Keep a clear gap before the wave. */
+body[data-footer-transition="wave"] #contato > .section {
+  padding-bottom: max(88px, calc(var(--footer-wave-height) + var(--footer-wave-clearance)));
+}
+
+body[data-footer-transition="wave"] #contato > .footer-transition {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  z-index: 1;
+  width: 100%;
+  height: var(--footer-wave-height);
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+body[data-footer-transition="wave"] #contato > .footer-transition > img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  margin: 0;
+  object-fit: fill;
+  pointer-events: none;
+}
+
+body[data-footer-transition="wave"] .footer {
+  border-top: 0;
+}
+
+@media (max-width: 800px) {
+  body[data-footer-transition="wave"] #contato {
+    --footer-wave-clearance: 28px;
+  }
+
+  /* Keep V6's 72px floor; the wave adds only 20px on narrow phones. */
+  body[data-footer-transition="wave"] #contato > .section {
+    padding-bottom: max(72px, calc(var(--footer-wave-height) + var(--footer-wave-clearance)));
+  }
+}

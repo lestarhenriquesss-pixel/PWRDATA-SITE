@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+ <symbol id="mark" viewBox="0 0 62 66"><g fill="none" stroke="currentColor" stroke-width="4.3" stroke-linecap="round" stroke-linejoin="round"><path d="M23 16 42 7 60 16 42 25Z"/><path d="M23 30 42 39 60 30M23 44 42 53 60 44M7 24h10M2 34h15M11 44h6"/></g></symbol>
+ <symbol id="mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 6 9 7 9-7"/></g></symbol>
+ <symbol id="instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/></g><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></symbol>
+ <symbol id="facebook" viewBox="0 0 24 24"><path d="M14 21v-8h3l.5-3H14V8c0-1 .4-2 2-2h2V3h-3c-3 0-5 2-5 5v2H7v3h3v8Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+ <symbol id="whatsapp" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 11.7a8.5 8.5 0 0 1-12.7 7.4L3 20.5l1.4-4.7a8.5 8.5 0 1 1 16.1-4.1Z"/><path d="m8 7 1.5 3-1 1c1 2 2.5 3.2 4.5 4l1-1 3 1.5c-1 2.5-3 2-5 .8C8 14.3 6 10.6 8 7Z"/></g></symbol>
+ <symbol id="search" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="21" cy="20" r="12"/><path d="m30 30 11 11M15 21h4l3-6 4 4"/></g></symbol>
+ <symbol id="blueprint" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="8" width="35" height="31" rx="3"/><path d="M6 16h35M13 22h10v10H13ZM29 22h6M29 28h6M29 34h6"/></g></symbol>
+ <symbol id="build" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9h32v28H8ZM8 16h32M19 23l-5 4 5 4M29 23l5 4-5 4M26 21l-4 12"/></g></symbol>
+ <symbol id="growth" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 9v31h34M14 32l8-9 7 3 11-13M31 13h9v9"/></g></symbol>
+ <symbol id="action-forward" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h7M3 16h15M3 24h7M15 7l13 9-13 9"/></g></symbol>
+ <symbol id="action-down" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="rotate(90 16 16)"><path d="M3 8h7M3 16h15M3 24h7M15 7l13 9-13 9"/></g></symbol>
+ <symbol id="action-up" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="rotate(-90 16 16)"><path d="M3 8h7M3 16h15M3 24h7M15 7l13 9-13 9"/></g></symbol>
+ <symbol id="action-back" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" transform="rotate(180 16 16)"><path d="M3 8h7M3 16h15M3 24h7M15 7l13 9-13 9"/></g></symbol>
+ <symbol id="action-close" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="m9 9 14 14M23 9 9 23M3 8h2M3 16h2M3 24h2"/></g></symbol>
+ <symbol id="action-menu" viewBox="0 0 32 32"><g fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"><path d="M4 8h21M4 16h16M4 24h21"/></g></symbol>
+</svg>
