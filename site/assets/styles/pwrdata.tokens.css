@@ -1,0 +1,192 @@
+/* PWR application defaults, adopted explicitly. Never overwrite a client theme.
+   Brand evidence: supplied PWR marks + pwrdata.com.br (2026-10-22).
+   Geometry, density and motion are product defaults, not mandates of the brand PDF.
+   No attribute = light. data-pwr-theme wins over data-theme on the same element.
+   Import inter-fonts.css separately to load the bundled Inter files. */
+:root,
+[data-pwr-theme='light'],
+[data-pwr-theme='dark'],
+[data-theme='light'],
+[data-theme='dark'] {
+  color-scheme: light;
+  --brand: #E8601C;
+  --brand-foreground: #1E2128;
+  --brand-text: #B84A10;
+  --brand-soft: #FDEBDF;
+  --graphite: #262A32;
+  --canvas: #F7F7F8;
+  --surface: #FFFFFF;
+  --surface-subtle: #F7F7F8;
+  --surface-raised: #FFFFFF;
+  --ink: #1E2128;
+  --muted: #5B6270;
+  --line: #E3E5E9;
+  --line-strong: #7D8491;
+  --action: #C2500F;
+  --action-hover: #A9440C;
+  --action-active: #933B0A;
+  --action-foreground: #FFFFFF;
+  --focus: #1E2128;
+  --success: #1D7A52;
+  --success-soft: #EAF7EF;
+  --warning: #8A5E08;
+  --warning-soft: #FFF5D8;
+  --danger: #B42318;
+  --danger-soft: #FEECE9;
+  --danger-foreground: #FFFFFF;
+  --info: #3E5C76;
+  --info-soft: #EDF3F8;
+  --disabled-surface: #ECEEF1;
+  --disabled-ink: #5B6270;
+  --overlay: rgb(20 22 27 / 48%);
+
+  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-heading: var(--font-body);
+  --font-mono: ui-monospace, 'SFMono-Regular', Consolas, monospace;
+  --text-display: 600 4rem/4.25rem var(--font-heading);
+  --text-h1: 600 2.5rem/2.875rem var(--font-heading);
+  --text-h2: 600 1.875rem/2.25rem var(--font-heading);
+  --text-h3: 600 1.375rem/1.75rem var(--font-heading);
+  --text-title: var(--text-h2);
+  --text-section: var(--text-h3);
+  --text-subtitle: 600 1.125rem/1.625rem var(--font-heading);
+  --text-body-lg: 400 1.125rem/1.75rem var(--font-body);
+  --text-body: 400 1rem/1.5rem var(--font-body);
+  --text-small: 400 .875rem/1.25rem var(--font-body);
+  --text-label: 500 .875rem/1.25rem var(--font-body);
+  --text-overline: 600 .75rem/1rem var(--font-body);
+  --text-kpi: 600 2.5rem/2.75rem var(--font-body);
+  --text-code: 400 .875rem/1.25rem var(--font-mono);
+
+  --space-1: .25rem;
+  --space-2: .5rem;
+  --space-3: .75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --radius-none: 0;
+  --radius-control: .375rem;
+  --radius-panel: .625rem;
+  --radius-dialog: 1rem;
+  --radius-pill: 9999px;
+  --shadow-sm: 0 1px 2px rgb(20 22 27 / 8%);
+  --shadow-overlay: 0 16px 40px rgb(20 22 27 / 20%);
+  --ease-standard: cubic-bezier(.2, .8, .2, 1);
+
+  /* Compatibility aliases resolve at each local theme boundary. */
+  --accent: var(--action);
+  --accent-foreground: var(--action-foreground);
+  --selected: var(--brand-soft);
+  --selected-foreground: var(--ink);
+  --pwr-orange: var(--brand);
+  --pwr-on-orange: var(--brand-foreground);
+  --pwr-orange-text: var(--brand-text);
+  --pwr-orange-soft: var(--brand-soft);
+  --pwr-graphite: var(--graphite);
+  --pwr-surface: var(--surface);
+  --pwr-surface-subtle: var(--surface-subtle);
+  --pwr-surface-raised: var(--surface-raised);
+  --pwr-ink: var(--ink);
+  --pwr-ink-muted: var(--muted);
+  --pwr-line: var(--line);
+  --pwr-line-strong: var(--line-strong);
+  --pwr-action: var(--action);
+  --pwr-action-hover: var(--action-hover);
+  --pwr-on-action: var(--action-foreground);
+  --pwr-focus: var(--focus);
+  --pwr-success: var(--success);
+  --pwr-warning: var(--warning);
+  --pwr-danger: var(--danger);
+  --pwr-steel: var(--info);
+  --pwr-font-sans: var(--font-body);
+  --pwr-font-mono: var(--font-mono);
+  --pwr-text-display: var(--text-display);
+  --pwr-text-h1: var(--text-h1);
+  --pwr-text-h2: var(--text-h2);
+  --pwr-text-h3: var(--text-h3);
+  --pwr-text-body-lg: var(--text-body-lg);
+  --pwr-text-body: var(--text-body);
+  --pwr-text-small: var(--text-small);
+  --pwr-text-label: var(--text-label);
+  --pwr-text-overline: var(--text-overline);
+  --pwr-text-kpi: var(--text-kpi);
+  --pwr-text-code: var(--text-code);
+}
+
+[data-pwr-theme='dark'],
+[data-theme='dark']:not([data-pwr-theme='light']) {
+  color-scheme: dark;
+  --canvas: #14161B;
+  --surface: #1C1F25;
+  --surface-subtle: #14161B;
+  --surface-raised: #23272F;
+  --ink: #F2F3F5;
+  --muted: #A3A9B4;
+  --line: #2C3039;
+  --line-strong: #767E8C;
+  --brand-text: #F07A3C;
+  --brand-soft: #3A1E10;
+  --action: #F07A3C;
+  --action-hover: #F28A50;
+  --action-active: #F6A271;
+  --action-foreground: #14161B;
+  --focus: #F07A3C;
+  --success: #4CC38A;
+  --success-soft: #123324;
+  --warning: #E2B34B;
+  --warning-soft: #352A13;
+  --danger: #F27D72;
+  --danger-soft: #3F1C1A;
+  --danger-foreground: #14161B;
+  --info: #8FB0CC;
+  --info-soft: #1C2B38;
+  --disabled-surface: #292E37;
+  --disabled-ink: #A3A9B4;
+  --overlay: rgb(0 0 0 / 64%);
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 24%);
+  --shadow-overlay: 0 16px 40px rgb(0 0 0 / 44%);
+}
+
+/* Preferences inherit through nested color-theme boundaries. */
+:root {
+  --control-min-height: 2.75rem;
+  --row-min-height: 3rem;
+  --duration-fast: 120ms;
+  --duration-base: 180ms;
+  --duration-panel: 240ms;
+  --motion-distance: .5rem;
+}
+
+[data-pwr-density='compact'] {
+  --control-min-height: 2.25rem;
+  --row-min-height: 2.5rem;
+}
+
+@media (pointer: coarse) {
+  [data-pwr-density='compact'] {
+    --control-min-height: 2.75rem;
+    --row-min-height: 3rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root,
+  [data-pwr-theme],
+  [data-theme] {
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+    --duration-panel: 0ms;
+    --motion-distance: 0rem;
+  }
+}
+
+[data-pwr-reduce='true'],
+[data-pwr-reduce='true'] [data-pwr-theme],
+[data-pwr-reduce='true'] [data-theme] {
+  --duration-fast: 0ms;
+  --duration-base: 0ms;
+  --duration-panel: 0ms;
+  --motion-distance: 0rem;
+}

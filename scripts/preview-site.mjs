@@ -1,18 +1,21 @@
 import http from 'node:http';
-import { readFile } from 'node:fs/promises';
+import { readFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../site');
 const port = 4174;
-const types = { '.html': 'text/html; charset=utf-8', '.png': 'image/png', '.jpg': 'image/jpeg', '.webp': 'image/webp', '.svg': 'image/svg+xml', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.mp4':'video/mp4' };
+const types = { '.html': 'text/html; charset=utf-8', '.png': 'image/png', '.jpg': 'image/jpeg', '.webp': 'image/webp', '.svg': 'image/svg+xml', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.mp4':'video/mp4', '.woff2':'font/woff2' };
 http.createServer(async (request, response) => {
   try {
     const url = new URL(request.url, 'http://127.0.0.1');
-    const relative = decodeURIComponent(url.pathname === '/' ? '/index.html' : url.pathname);
+    const relative = decodeURIComponent(url.pathname.endsWith('/') ? url.pathname+'index.html' : url.pathname);
     const target = path.resolve(root, '.' + relative);
     if (!target.startsWith(root + path.sep)) {
       response.writeHead(403); response.end(); return;
+    }
+    if((await stat(target)).isDirectory()){
+      response.writeHead(308,{Location:url.pathname+'/'+url.search});response.end();return;
     }
     const content = await readFile(target);
     const headers={'Content-Type':types[path.extname(target)]||'application/octet-stream','Cache-Control':'no-store','X-Content-Type-Options':'nosniff','Accept-Ranges':'bytes'};

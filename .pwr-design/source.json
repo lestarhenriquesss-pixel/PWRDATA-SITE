@@ -1,0 +1,64 @@
+{
+  "plugin": "pwr@pwrdata",
+  "version": "2.1.1",
+  "consumed_at": "2026-10-22",
+  "surface": "website",
+  "identity": "pwrdata",
+  "brand_scope": "corporate",
+  "assets": [
+    {
+      "source": "assets/styles/pwrdata.tokens.css",
+      "local_path": "site/assets/styles/pwrdata.tokens.css",
+      "bytes": 5766,
+      "sha256": "314fba6dfb9a3aef07c454610b11f7b84761e14641e8a24d5cd8a0dea20abb6d"
+    },
+    {
+      "source": "assets/styles/inter-fonts.css",
+      "local_path": "site/assets/styles/inter-fonts.css",
+      "bytes": 578,
+      "sha256": "b485e2ee1f328cb175f4c9d92725055f112a220c03c3183589422eea0b3cd080"
+    },
+    {
+      "source": "assets/fonts/inter-variable-normal.woff2",
+      "local_path": "site/assets/fonts/inter-variable-normal.woff2",
+      "bytes": 352240,
+      "sha256": "693b77d4f32ee9b8bfc995589b5fad5e99adf2832738661f5402f9978429a8e3"
+    },
+    {
+      "source": "assets/fonts/inter-variable-italic.woff2",
+      "local_path": "site/assets/fonts/inter-variable-italic.woff2",
+      "bytes": 387976,
+      "sha256": "e564f652916db6c139570fefb9524a77c4d48f30c92928de9db19b6b5c7a262a"
+    },
+    {
+      "source": "assets/licenses/inter-OFL.txt",
+      "local_path": "site/assets/licenses/inter-OFL.txt",
+      "bytes": 4380,
+      "sha256": "262481e844521b326f5ecd053e59b98c8b2da78c8ee1bdbb6e8174305e54935a"
+    },
+    {
+      "source": "assets/licenses/pwrdata-site-icons.md",
+      "local_path": "site/assets/licenses/pwrdata-site-icons.md",
+      "bytes": 1219,
+      "sha256": "5a620b0d12be633053d9cf210e8f81c411316929146caac157c13e1caeee501b"
+    },
+    {
+      "source": "assets/brand/official/svg/pwrdata_cor.svg",
+      "local_path": "site/assets/brand/pwrdata_cor.svg",
+      "bytes": 4231,
+      "sha256": "3b42a54dd98c2e01b2a85fc0a07910c8713489b9bb38bea816157f1938d9a22d"
+    },
+    {
+      "source": "assets/brand/official/svg/simbolo-p_cor.svg",
+      "local_path": "site/assets/brand/simbolo-p_cor.svg",
+      "bytes": 820,
+      "sha256": "3778fb4bb4f207cffa619f047788dc282e4a8aec005f2cc8b606b24143f27a70"
+    },
+    {
+      "source": "assets/brand/official/svg/app-icon_cor.svg",
+      "local_path": "site/assets/brand/app-icon_cor.svg",
+      "bytes": 1356,
+      "sha256": "9a6ca3019f5fa3e93e7d41c1d3d7fe0728805891482477892b95c3620981f6b2"
+    }
+  ]
+}

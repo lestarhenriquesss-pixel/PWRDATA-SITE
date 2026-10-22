@@ -1,0 +1,519 @@
+{
+  "retrieved_at": "2026-10-22T21:32:24.495Z",
+  "assets": [
+    {
+      "name": "pwr_cor",
+      "source": "PWR 2.1.1/assets/brand/official/svg/pwr_cor.svg",
+      "local_source": "site/assets/brand/pwr_cor.svg",
+      "sha256": "a3eb01b28a52d17420d8f28d0a2c27d38e92a9c1e037cb11072651b385e58c87",
+      "bytes": 2114,
+      "license": "Official PWR brand assets supplied by owner.",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "a3eb01b28a52d17420d8f28d0a2c27d38e92a9c1e037cb11072651b385e58c87"
+    },
+    {
+      "name": "pwr_branco",
+      "source": "PWR 2.1.1/assets/brand/official/svg/pwr_branco.svg",
+      "local_source": "site/assets/brand/pwr_branco.svg",
+      "sha256": "b0488ec10eeea58deb25fbbe1163c42bdb36de46c2b90a28d54c784f00e948cc",
+      "bytes": 2120,
+      "license": "Official PWR brand assets supplied by owner.",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "b0488ec10eeea58deb25fbbe1163c42bdb36de46c2b90a28d54c784f00e948cc"
+    },
+    {
+      "name": "pwrdata_grafite",
+      "source": "PWR 2.1.1/assets/brand/official/svg/pwrdata_grafite.svg",
+      "local_source": "site/assets/brand/pwrdata_grafite.svg",
+      "sha256": "967e1fb8b4b3eb27591eb5f1eb518de3590f6fadd53b3052138b5fb85329cb5d",
+      "bytes": 4239,
+      "license": "Official PWR brand assets supplied by owner.",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "967e1fb8b4b3eb27591eb5f1eb518de3590f6fadd53b3052138b5fb85329cb5d"
+    },
+    {
+      "name": "pwr-canvas_cor",
+      "source": "PWR 2.1.1/assets/brand/official/svg/pwr-canvas_cor.svg",
+      "local_source": "site/assets/brand/pwr-canvas_cor.svg",
+      "sha256": "55a660944ed74d6d6accfe40e80a0a6d6b597dd02c6a2f2abc9bc73a0ce8b7f6",
+      "bytes": 5367,
+      "license": "Official PWR brand assets supplied by owner.",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "55a660944ed74d6d6accfe40e80a0a6d6b597dd02c6a2f2abc9bc73a0ce8b7f6"
+    },
+    {
+      "name": "pwr-canvas_negativo",
+      "source": "PWR 2.1.1/assets/brand/official/svg/pwr-canvas_negativo.svg",
+      "local_source": "site/assets/brand/pwr-canvas_negativo.svg",
+      "sha256": "2391b9337fbbf84eee654895ac6bff1e73907efdafd42dc76c7317a1a62febd4",
+      "bytes": 5377,
+      "license": "Official PWR brand assets supplied by owner.",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "2391b9337fbbf84eee654895ac6bff1e73907efdafd42dc76c7317a1a62febd4"
+    },
+    {
+      "name": "pwr-iris_cor",
+      "source": "PWR 2.1.1/assets/brand/official/svg/pwr-iris_cor.svg",
+      "local_source": "site/assets/brand/pwr-iris_cor.svg",
+      "sha256": "1593cf933798c144df1ce631cb7a2f39e78d936af5d00eb2c54fd2e7cbe328f3",
+      "bytes": 3596,
+      "license": "Official PWR brand assets supplied by owner.",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "1593cf933798c144df1ce631cb7a2f39e78d936af5d00eb2c54fd2e7cbe328f3"
+    },
+    {
+      "name": "pwr-iris_negativo",
+      "source": "PWR 2.1.1/assets/brand/official/svg/pwr-iris_negativo.svg",
+      "local_source": "site/assets/brand/pwr-iris_negativo.svg",
+      "sha256": "e81aa8a03f30d3ed92d102799580699b9c39e89fbddba2540410bc5a616baaa8",
+      "bytes": 3606,
+      "license": "Official PWR brand assets supplied by owner.",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "e81aa8a03f30d3ed92d102799580699b9c39e89fbddba2540410bc5a616baaa8"
+    },
+    {
+      "name": "arrow-up-right",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/arrow-up-right.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "50b2503b9d11881142255466b7e3461d022b919735841c321d72003ac9959fe1",
+      "bytes": 260,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "arrow-right",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/arrow-right.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "288397fdb73bb4f783cf9eabb726ff47357df1d4e3f1201dd748090579f108b9",
+      "bytes": 261,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "arrow-left",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/arrow-left.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "c5f4b88076108eb1a0d95336e1aa7e7bb1419a3a92af96f6247d88cd3456f933",
+      "bytes": 262,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "arrow-down",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/arrow-down.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "2b641c7a59d39450edfed72067fcc9940a1a316a737346af23b4b9103c0689f2",
+      "bytes": 262,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "arrow-up",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/arrow-up.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "8c22c25874c80bb062bef985d207d8f1d4a4d7847237d0a8cf720a3235968518",
+      "bytes": 261,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "x",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/x.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "4a9cdab38fbb96162e7dace28e33f4ca0e49d8963a6162abc3d4691b7d675117",
+      "bytes": 260,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "menu",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/menu.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "af6491988ac1ba30dc5414f485bc48713e957e1edb0fbef4a0dd8691c3c21598",
+      "bytes": 279,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "sun",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/sun.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "a3955c8b0425fcc5c9ba12d2bdd77fe53b2cd5dd05e7742a56f342e996fb2ef8",
+      "bytes": 485,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "moon",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/moon.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "205b959e940d5841f0ce1d09c933153da9d9c94130a54d5cc0c68c2af1d403da",
+      "bytes": 334,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "accessibility",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/accessibility.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "114a9b6983ee20c43d76556bbb5633085a0e082b19464dfa36f1e27768c8f3ea",
+      "bytes": 398,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "shield-check",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/shield-check.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "8d4fcdbde5bba4abb1a2f6fe53e37ceb6343a1d5449a9d88f6f97c1971d26c4e",
+      "bytes": 415,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "database",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/database.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "471eb14bc8d144896a82dfc4aa9daf350f769f0896f4bef33e50aabdbb51130d",
+      "bytes": 329,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "workflow",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/workflow.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "ae99ea8f56a2835a2cca35b2fbb57643ab73443610970dba23e24bd9df75cfec",
+      "bytes": 351,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "code-xml",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/code-xml.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "a6d2110227be375be21da7324d3c09262c1bf019d06bdeab356d515342ab7cce",
+      "bytes": 294,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "cloud",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/cloud.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "28a34022ed00177eb1f218eea5d2b7af30d09b529187fe32219e4dd8ea2b9740",
+      "bytes": 275,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "brain-circuit",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/brain-circuit.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "134231b12f68aca2943d6a7a6aa891dd2e26d89b5658a2c78c7094fbe29797e9",
+      "bytes": 744,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "chart-no-axes-combined",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/chart-no-axes-combined.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "2f8a708c357488cfde7428d9b055b9bb4a99c08dc71e9296da03ecc19291c4ab",
+      "bytes": 432,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "lock-keyhole",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/lock-keyhole.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "fc0b8b7590d1d9e9bb0112c5c2e15a78ade0bfeca6d6f8c79fbbe149236d74be",
+      "bytes": 337,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "check",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/check.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "7f33acc9a77a61659531044525fc008edebe215bf4dcf1c789c8674ad3277db0",
+      "bytes": 239,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "chevron-down",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/chevron-down.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "66ea878e72ed3488bb3b464c39dfdccee8d1f78e560dccea40e5e12da0e87e87",
+      "bytes": 236,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "chevron-left",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/chevron-left.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "83b0681aa38bf55e9d52a1e4b4cced624abe1fe7678ecafda133a574f1161d93",
+      "bytes": 238,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "chevron-right",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/chevron-right.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "2758143d7b2434e4aa7307dfd34405c87909ff4052f21b5f3f40d45224b4f19b",
+      "bytes": 237,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "sparkles",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/sparkles.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "f5499f33f09d7158151e9bd2ec0faf79ff8fb57292f84fdd7286d96d0f0424d8",
+      "bytes": 567,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "send",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/send.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "a489257f447b808ab6b258ae888fa49686885bbc30a7a2774d97a01f11f9cd5e",
+      "bytes": 393,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "sap",
+      "source": "https://cdn.simpleicons.org/sap",
+      "local_source": "site/assets/integrations/sap.svg",
+      "sha256": "3c308900c4fadd5e6a43ed304d698f2db9a8f4ecd43827760a4461cb0309052f",
+      "bytes": 1042,
+      "license": "Simple Icons CC0; marks remain property of their owners.",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "3c308900c4fadd5e6a43ed304d698f2db9a8f4ecd43827760a4461cb0309052f"
+    },
+    {
+      "name": "googlebigquery",
+      "source": "https://cdn.simpleicons.org/googlebigquery",
+      "local_source": "site/assets/integrations/googlebigquery.svg",
+      "sha256": "a26f6aafc25bfab0ab984274eeca019e4562809e6d6b3464810a520b697e6e59",
+      "bytes": 717,
+      "license": "Simple Icons CC0; marks remain property of their owners.",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "a26f6aafc25bfab0ab984274eeca019e4562809e6d6b3464810a520b697e6e59"
+    },
+    {
+      "name": "apacheairflow",
+      "source": "https://cdn.simpleicons.org/apacheairflow",
+      "local_source": "site/assets/integrations/apacheairflow.svg",
+      "sha256": "853292104371b4b3ab96d1843f6646d8488766abd9836ee97975ef091b394e0b",
+      "bytes": 2268,
+      "license": "Simple Icons CC0; marks remain property of their owners.",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "853292104371b4b3ab96d1843f6646d8488766abd9836ee97975ef091b394e0b"
+    },
+    {
+      "name": "docker",
+      "source": "https://cdn.simpleicons.org/docker",
+      "local_source": "site/assets/integrations/docker.svg",
+      "sha256": "ba1fb157870b2ec02e054aed42154ac7418e25af91ec321fd328d17cad4023cd",
+      "bytes": 1780,
+      "license": "Simple Icons CC0; marks remain property of their owners.",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "ba1fb157870b2ec02e054aed42154ac7418e25af91ec321fd328d17cad4023cd"
+    },
+    {
+      "name": "postgresql",
+      "source": "https://cdn.simpleicons.org/postgresql",
+      "local_source": "site/assets/integrations/postgresql.svg",
+      "sha256": "bc45b1c56d0b1501dea387dbec4fda450d2ebc35244a620791815509d8c41dba",
+      "bytes": 5220,
+      "license": "Simple Icons CC0; marks remain property of their owners.",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "bc45b1c56d0b1501dea387dbec4fda450d2ebc35244a620791815509d8c41dba"
+    },
+    {
+      "name": "react",
+      "source": "https://cdn.simpleicons.org/react",
+      "local_source": "site/assets/integrations/react.svg",
+      "sha256": "37c8c23bc6ea999ad58b7f3883fc08b7e22128ec25adcca60ae1046ff878bcc3",
+      "bytes": 2941,
+      "license": "Simple Icons CC0; marks remain property of their owners.",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "37c8c23bc6ea999ad58b7f3883fc08b7e22128ec25adcca60ae1046ff878bcc3"
+    },
+    {
+      "name": "nodedotjs",
+      "source": "https://cdn.simpleicons.org/nodedotjs",
+      "local_source": "site/assets/integrations/nodedotjs.svg",
+      "sha256": "6c7826737490eb559312b3fdc8853db70ef48a9e035d1bac019efd6e1a1e1371",
+      "bytes": 1623,
+      "license": "Simple Icons CC0; marks remain property of their owners.",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "6c7826737490eb559312b3fdc8853db70ef48a9e035d1bac019efd6e1a1e1371"
+    },
+    {
+      "name": "nextdotjs",
+      "source": "https://cdn.simpleicons.org/nextdotjs",
+      "local_source": "site/assets/integrations/nextdotjs.svg",
+      "sha256": "1d806f2ddfe4eb9599dba14d79a6cc79c5fa55b93805fcd1ab186773a8c42c53",
+      "bytes": 337,
+      "license": "Simple Icons CC0; marks remain property of their owners.",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "1d806f2ddfe4eb9599dba14d79a6cc79c5fa55b93805fcd1ab186773a8c42c53"
+    },
+    {
+      "name": "microsoftsqlserver",
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@11.15.0/icons/microsoftsqlserver.svg",
+      "local_source": "site/assets/integrations/microsoftsqlserver.svg",
+      "sha256": "a6c3517a8bce0273d95f51d530d3b28231a60fe27a6423b8cd5eb74484aad9be",
+      "integrated_sha256": "f235629b74550663e55cb2ff1ddefd8780157e2e874244f31d75ffb34f79eff8",
+      "bytes": 9352,
+      "source_scope": "Simple Icons 11.15.0 original SVG; integrated fill uses the color declared in its metadata.",
+      "license": "Simple Icons CC0; trademarks remain property of their owners."
+    },
+    {
+      "name": "microsoftexcel",
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@11.15.0/icons/microsoftexcel.svg",
+      "local_source": "site/assets/integrations/microsoftexcel.svg",
+      "sha256": "3392b76e2c1791f6622bc6a27bcf332ea6985cf263f8cb7153a37d43d74d2940",
+      "integrated_sha256": "3764dfce856ca6a8857ea63fa28c40ce4ef9a5129c878f2d67ec92770f2879db",
+      "bytes": 563,
+      "source_scope": "Simple Icons 11.15.0 original SVG; integrated fill uses the color declared in its metadata.",
+      "license": "Simple Icons CC0; trademarks remain property of their owners."
+    },
+    {
+      "name": "microsoftteams",
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@11.15.0/icons/microsoftteams.svg",
+      "local_source": "site/assets/integrations/microsoftteams.svg",
+      "sha256": "9c509b9aea846e4a773d59df7fe3d29843e9e05c3579ce167d1e7e5ba14be1d1",
+      "integrated_sha256": "11456d94041a9be6979acea75716d1e107f717d2c1e49baf5e6572de15bcc763",
+      "bytes": 1850,
+      "source_scope": "Simple Icons 11.15.0 original SVG; integrated fill uses the color declared in its metadata.",
+      "license": "Simple Icons CC0; trademarks remain property of their owners."
+    },
+    {
+      "name": "oracle",
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@11.15.0/icons/oracle.svg",
+      "local_source": "site/assets/integrations/oracle.svg",
+      "sha256": "d355bd1561de9aea08928e662bdce5b4834f0dcb6096aa0b04b4eed23fc1fcb9",
+      "integrated_sha256": "620848857c018ae7da63607c228c1ec35712a84784953cc57764ff54b3210a80",
+      "bytes": 271,
+      "source_scope": "Simple Icons 11.15.0 original SVG; integrated fill uses the color declared in its metadata.",
+      "license": "Simple Icons CC0; trademarks remain property of their owners."
+    },
+    {
+      "name": "powerbi",
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@11.15.0/icons/powerbi.svg",
+      "local_source": "site/assets/integrations/powerbi.svg",
+      "sha256": "d013902e022208ea00acc45c0ed4377699a2913ce1b26267e85e85001603d554",
+      "integrated_sha256": "f9541e3456e5c76c0f6f87455fdafad0d5d94d055cb46c608e1905c7946a74d5",
+      "bytes": 330,
+      "source_scope": "Simple Icons 11.15.0 original SVG; integrated fill uses the color declared in its metadata.",
+      "license": "Simple Icons CC0; trademarks remain property of their owners."
+    },
+    {
+      "name": "dbt",
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@11.15.0/icons/dbt.svg",
+      "local_source": "site/assets/integrations/dbt.svg",
+      "sha256": "e8ced6f94379a74d3d6622516f2f067c247b22f8f5470557ca8e6751d426df38",
+      "integrated_sha256": "00cd831f90dc763d8d2255324d36985d9df6f72e6153498250411254817218f0",
+      "bytes": 1515,
+      "source_scope": "Simple Icons 11.15.0 original SVG; integrated fill uses the color declared in its metadata.",
+      "license": "Simple Icons CC0; trademarks remain property of their owners."
+    },
+    {
+      "name": "totvs",
+      "source": "https://cdn.jsdelivr.net/npm/simple-icons@11.15.0/icons/totvs.svg",
+      "local_source": "site/assets/integrations/totvs.svg",
+      "sha256": "05e740b91209fd7b9ddeaddb2a054d6a02dd48e840ffa865ee8611e0b7e9b6b5",
+      "integrated_sha256": "a365bc46787cef1ddd43fe11c202decf55750d7d0bf6da957e2a4da4e73c852a",
+      "bytes": 618,
+      "source_scope": "Simple Icons 11.15.0 original SVG; integrated fill uses the color declared in its metadata.",
+      "license": "Simple Icons CC0; trademarks remain property of their owners."
+    },
+    {
+      "name": "rdstation",
+      "source": "https://legacy.rdstation.com/wp-content/themes/rdstation/assets/img/logos/rebrand-2025/rd-station-default.svg",
+      "local_source": "site/assets/integrations/rdstation.svg",
+      "sha256": "598d695e55604e324008d22994d1eb2e8d643d6b1154f80c68f72a0206a6f573",
+      "integrated_sha256": "598d695e55604e324008d22994d1eb2e8d643d6b1154f80c68f72a0206a6f573",
+      "bytes": 9933,
+      "license": "Official brand asset, used to identify a referenced tool; trademarks remain with their owners."
+    },
+    {
+      "name": "omie",
+      "source": "https://www.omie.com.br/uploads/logo-omie.webp",
+      "local_source": "site/assets/integrations/omie.webp",
+      "sha256": "5503113e64d35b1f7e6fcc7ae20eac216f9a387ca3b4710fd3824877cdb4db85",
+      "integrated_sha256": "5503113e64d35b1f7e6fcc7ae20eac216f9a387ca3b4710fd3824877cdb4db85",
+      "bytes": 1678,
+      "license": "Official brand asset, used to identify a referenced tool; trademarks remain with their owners."
+    },
+    {
+      "name": "volume-2",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/volume-2.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "fb404f9c128a0579de67b399177631e5edb3502fdc247ceb30e8b15754b46071",
+      "bytes": 476,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "monitor",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/monitor.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "d1a443233345724859de8e4fb48968ba91e885e12ddbd710701548bd91b39428",
+      "bytes": 346,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    },
+    {
+      "name": "rotate-ccw",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/rotate-ccw.svg",
+      "local_source": "site/assets/ui-icons.svg",
+      "sha256": "622685386ab4017eabfde01cd74550a20b1924df233b353f73b6b155371f2afd",
+      "bytes": 297,
+      "license": "ISC / MIT (Lucide / Feather), site/assets/licenses/lucide.txt",
+      "source_scope": "Original bytes retrieved from the stated source.",
+      "integrated_sha256": "62715277e16b987605b0f4dbbb955514babd8488695b8eda6c3a44d76db8143c"
+    }
+  ],
+  "exclusions": [
+    {
+      "name": "Microsoft Entra ID icon",
+      "reason": "The official architecture icon pack excludes marketing use. The tool is represented by its written name, without inventing a symbol."
+    }
+  ]
+}

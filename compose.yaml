@@ -1,0 +1,14 @@
+name: pwr-site-design
+services:
+  site:
+    build: .
+    ports:
+      - "127.0.0.1:4180:80"
+    volumes:
+      - ./site:/usr/share/nginx/html:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://127.0.0.1/"]
+      interval: 15s
+      timeout: 3s
+      retries: 3

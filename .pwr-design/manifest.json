@@ -1,0 +1,33 @@
+{
+  "canonical_sources": {
+    "components": "site/index.html",
+    "tokens": "site/assets/styles/pwrdata.tokens.css"
+  },
+  "central_override": false,
+  "contract_version": "1.0.0",
+  "mode": "legacy-mapped",
+  "motion": "subtle",
+  "profile": "pwrdata",
+  "project": {
+    "id": "pwrdata",
+    "kind": "website",
+    "name": "PWRDATA",
+    "owner": "PWRDATA"
+  },
+  "signature": {
+    "href": "https://pwrdata.com.br/",
+    "label": "Criado por PWRDATA"
+  },
+  "tokens": {
+    "accent": "--accent",
+    "accent_foreground": "--accent-foreground",
+    "brand": "--brand",
+    "brand_foreground": "--brand-foreground",
+    "canvas": "--canvas",
+    "focus": "--focus",
+    "ink": "--ink",
+    "line": "--line",
+    "muted": "--muted",
+    "surface": "--surface"
+  }
+}

@@ -1,11 +1,11 @@
 (() => {
   'use strict';
 
-  const C = { light: '#f5f2ec', amber: '#ff9d61', orange: '#ff702b', base: '#26262f', line: '#565663' };
+  const C = { light: 'var(--scene-ink)', amber: 'var(--scene-accent)', orange: 'var(--brand)', base: 'var(--scene-base)', line: 'var(--scene-line)' };
   let serial = 0;
 
   const text = (x, y, value, size = 18, color = C.light, anchor = 'middle') =>
-    `<text x="${x}" y="${y}" fill="${color}" font-family="Manrope, sans-serif" font-size="${size}" font-weight="500" text-anchor="${anchor}">${value}</text>`;
+    `<text x="${x}" y="${y}" fill="${color}" font-family="Inter, sans-serif" font-size="${size}" font-weight="500" text-anchor="${anchor}">${value}</text>`;
   const path = (d, color = C.line, width = 2, extra = '') =>
     `<path class="scene-path" d="${d}" fill="none" stroke="${color}" stroke-width="${width}" stroke-linecap="round" stroke-linejoin="round" ${extra}/>`;
   const dot = (x, y, r = 4, color = C.amber) =>
@@ -19,7 +19,7 @@
 
   function svg(name, width, height, draw) {
     const id = 'pwr-scene-' + (++serial);
-    return `<svg class="scene-svg scene-${name}" viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><defs><linearGradient id="${id}-material" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${C.line}" stop-opacity=".72"/><stop offset="1" stop-color="${C.base}"/></linearGradient><linearGradient id="${id}-accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${C.amber}"/><stop offset="1" stop-color="${C.orange}"/></linearGradient><radialGradient id="${id}-light"><stop stop-color="${C.orange}" stop-opacity=".22"/><stop offset="1" stop-color="${C.orange}" stop-opacity="0"/></radialGradient></defs>${draw(id)}</svg>`;
+    return `<svg class="scene-svg scene-${name}" viewBox="0 0 ${width} ${height}" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><defs><linearGradient id="${id}-material" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${C.base}"/><stop offset="1" stop-color="${C.base}"/></linearGradient><linearGradient id="${id}-accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="${C.amber}"/><stop offset="1" stop-color="${C.orange}"/></linearGradient><radialGradient id="${id}-light"><stop stop-color="${C.orange}" stop-opacity=".22"/><stop offset="1" stop-color="${C.orange}" stop-opacity="0"/></radialGradient></defs>${draw(id)}</svg>`;
   }
 
   const offers = {
@@ -96,58 +96,11 @@
       ${text(103, 256, 'Jornada')}${text(267, 256, 'Interface')}${text(450, 256, 'Aplicação')}`
   };
 
-  const processBase = id => `${glow(id, 320, 184, 292, 164)}
-    <path d="M86 103H554V293Q554 318 529 318H111Q86 318 86 293Z" fill="${C.base}" opacity=".65"/>
-    <rect x="74" y="78" width="492" height="230" rx="24" fill="url(#${id}-material)" stroke="${C.line}" stroke-opacity=".5"/>
-    ${path('M98 112H542M98 274H542M182 99V287M458 99V287', C.line, 1, 'opacity=".22"')}
-    ${path('M92 112V96H108M532 96H548V112M92 274V290H108M532 290H548V274', C.amber, 1.5, 'opacity=".46"')}`;
-  const processCore = (id, phase) => {
-    const content = phase === 'understand'
-      ? text(320, 196, '?', 43, C.light)
-      : phase === 'design'
-        ? `${path('M290 153H350V210H290ZM310 153V210M290 174H350', C.amber, 1.5)}`
-        // The visible brand paths center at y=30 in a 66-unit viewBox.
-        // Align that visible center to the tile center (320, 184).
-        : mark(293, 184 - 30 * 54 / 66, 54);
-    return `<g class="scene-node scene-core"><rect x="268" y="132" width="104" height="104" rx="${phase === 'understand' ? 52 : 20}" fill="url(#${id}-material)" stroke="${phase === 'design' ? C.amber : C.line}" stroke-width="1.5" ${phase === 'design' ? 'stroke-dasharray="5 5"' : ''}/>${content}</g>`;
-  };
-
-  const processScenes = {
-    understand: id => `${processBase(id)}
-      ${path('M169 147L268 175M459 135L372 169M169 246L277 212M462 249L363 214', C.line, 1.5, 'stroke-dasharray="4 8"')}
-      <g class="scene-node"><circle cx="155" cy="143" r="17" fill="url(#${id}-material)" stroke="${C.line}"/><circle cx="477" cy="130" r="22" fill="url(#${id}-material)" stroke="${C.line}"/><circle cx="155" cy="250" r="17" fill="url(#${id}-material)" stroke="${C.line}"/><circle cx="478" cy="254" r="20" fill="url(#${id}-material)" stroke="${C.line}"/></g>
-      ${dot(155, 143, 4)}${dot(477, 130, 4, C.light)}${dot(155, 250, 4, C.light)}${dot(478, 254, 4)}
-      ${processCore(id, 'understand')}
-      ${text(155, 116, 'Objetivo', 17)}${text(477, 95, 'Pessoas', 17)}${text(155, 285, 'Cenário', 17)}${text(478, 292, 'Prioridades', 17)}
-      ${text(320, 340, 'O que precisa mudar?', 19)}`,
-
-    design: id => `${processBase(id)}
-      ${path('M183 184H268M372 184H457M320 132V109M320 236V265', C.line, 2)}
-      ${path('M183 184H268M372 184H457', C.amber, 2)}
-      ${panel(id, 107, 154, 76, 60, 12)}${panel(id, 457, 154, 76, 60, 12)}
-      ${path('M126 184H164M476 184H514', C.light, 2, 'opacity=".4"')}
-      ${dot(320, 109, 5)}${dot(320, 265, 5)}${processCore(id, 'design')}
-      ${text(145, 240, 'Entrada', 17)}${text(495, 240, 'Uso', 17)}${text(320, 95, 'Jornada', 17)}${text(320, 292, 'Regras', 17)}
-      ${text(320, 340, 'Um caminho para construir.', 19)}`,
-
-    build: id => `${processBase(id)}
-      ${path('M191 139H224V161H268M191 252H224V207H268M449 139H416V161H372M449 252H416V207H372', C.line, 2)}
-      ${path('M191 139H224V161H268M372 207H416V252H449', C.amber, 2.5)}
-      ${panel(id, 115, 114, 76, 50, 10)}${panel(id, 115, 226, 76, 50, 10)}${panel(id, 449, 114, 76, 50, 10)}${panel(id, 449, 226, 76, 50, 10)}
-      ${path('M130 139H176M130 251H176M464 139H510M464 251H510', C.light, 2, 'opacity=".4"')}
-      ${dot(224, 161, 4)}${dot(416, 207, 4)}${processCore(id, 'build')}
-      ${text(153, 96, 'Interface', 17)}${text(153, 301, 'Dados', 17)}${text(487, 96, 'Integrações', 17)}${text(487, 301, 'Ambiente', 17)}
-      ${text(320, 340, 'As partes começam a funcionar.', 19)}`,
-
-    evolve: id => `${processBase(id)}
-      ${path('M207 184H268M372 184H433', C.line, 2)}
-      ${panel(id, 123, 156, 84, 56, 12)}${panel(id, 433, 156, 84, 56, 12)}
-      ${path('M140 184H190M450 184H500', C.light, 2, 'opacity=".4"')}
-      ${path('M258 264C187 224 197 124 269 96C341 68 423 122 420 190M382 259C364 270 343 274 321 273', C.amber, 2.5)}
-      <path class="scene-node" d="M411 181L420 193L428 181M330 266L317 273L330 280" fill="none" stroke="${C.amber}" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-      ${dot(268, 96, 4)}${dot(382, 259, 4)}${processCore(id, 'evolve')}
-      ${text(165, 243, 'Uso', 17)}${text(475, 243, 'Operação', 17)}${text(320, 62, 'Acompanhamento', 17)}${text(320, 300, 'Próxima versão', 17)}
-      ${text(320, 340, 'A entrega continua em uso.', 19)}`
+  const processViews = {
+    understand: '<div class="process-kicker">Ouvimos antes de desenhar.</div><div class="process-prompt scene-node">O que precisa mudar?</div><div class="process-brief"><div class="scene-node"><span>Quem vai usar</span><strong>Pessoas e contexto</strong></div><div class="scene-node"><span>O que importa</span><strong>Objetivos e prioridades</strong></div><div class="scene-node"><span>Por onde começar</span><strong>Um primeiro recorte</strong></div></div><div class="process-result scene-node">Uma direção que podemos construir juntos.</div>',
+    design: '<div class="process-kicker">O caminho fica visível.</div><div class="process-wireframe scene-node"><div class="wireframe-header"><i></i><i></i><i></i><span>Experiência em desenho</span></div><div class="wireframe-layout"><div class="wireframe-side"><b></b><b></b><b></b></div><div class="wireframe-main"><span>Uma jornada clara</span><div class="wireframe-blocks"><i></i><i></i><i></i></div><div class="wireframe-flow"><span>Entrada</span><i></i><span>Decisão</span><i></i><span>Resultado</span></div></div></div></div><div class="process-result scene-node">Interface, fluxos e arquitetura na mesma direção.</div>',
+    build: '<div class="process-kicker">As partes passam a trabalhar juntas.</div><div class="process-app scene-node"><div class="wireframe-header"><i></i><i></i><i></i><span>Uma versão para validar</span></div><div class="app-deliveries"><div><span>Experiência</span><strong>Interface construída</strong><i></i></div><div><span>Conexões</span><strong>Dados e regras integrados</strong><i></i></div><div><span>Qualidade</span><strong>Jornadas em validação</strong><i></i></div></div></div><div class="process-result scene-node">Uma entrega que você consegue ver e avaliar.</div>',
+    evolve: '<div class="process-kicker">A criação encontra o uso real.</div><div class="release-flow"><div class="scene-node"><span class="release-dot"></span><div><small>Publicação</small><strong>A entrega entra em operação.</strong></div></div><div class="scene-node"><span class="release-dot"></span><div><small>Acompanhamento</small><strong>O uso orienta os ajustes.</strong></div></div><div class="scene-node"><span class="release-dot"></span><div><small>Próximo ciclo</small><strong>A próxima melhoria ganha prioridade.</strong></div></div></div><div class="process-result scene-node">Publicar abre o caminho para continuar.</div>'
   };
 
   function offer(kind = 'embedded') {
@@ -159,8 +112,8 @@
     return svg('architecture-' + kind, 560, 280, architectureScenes[kind]);
   }
   function process(phase = 'understand') {
-    if (!processScenes[phase]) phase = 'understand';
-    return svg('process-' + phase, 640, 360, processScenes[phase]);
+    if (!processViews[phase]) phase = 'understand';
+    return '<div class="process-scene process-'+phase+'">'+processViews[phase]+'</div>';
   }
   function modal(kind = 'custom') {
     if (kind.startsWith('step-')) return process(kind.slice(5));

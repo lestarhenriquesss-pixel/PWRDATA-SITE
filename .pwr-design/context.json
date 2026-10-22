@@ -1,0 +1,56 @@
+{
+  "version": 2,
+  "surfaces": [
+    {
+      "path": "site",
+      "surface": "website",
+      "identity": "pwrdata"
+    }
+  ],
+  "intent": "Refinar a experiência mista PWR e acrescentar Soluções e Sobre como páginas próprias, preservando a assinatura da home e o encerramento aprovado.",
+  "baseline": {
+    "branch": "codex/implementacao-v1-site-pwrdata",
+    "commit": "ec12f804703c65d4396dae5858c3d88d003363d5",
+    "url": "https://pwrdata-site.vercel.app/"
+  },
+  "experiment_branch": "codex/pwr-design-system-claro",
+  "preserve": [
+    "Mídias e animação da home ocupando toda a abertura, sem recorte em card",
+    "Seção Você imagina. Nós criamos. aprovada pelo usuário",
+    "Contato em cobre, onda e footer #fffaf2",
+    "Formulário com preparação real de e-mail",
+    "Branches e sites publicados anteriores",
+    "Apresentação escura do filme da home nos dois temas."
+  ],
+  "authorized_changes": [
+    "Entrada escura; tema escuro integral em todas as páginas. Tema claro mantém alternância editorial entre materiais claros, escuros e cobre.",
+    "Acessibilidade no cabeçalho",
+    "Navegação aberta e marca abreviada oficial",
+    "Ícones Lucide para ações",
+    "Apresentação de Canvas e Íris com destinos oficiais",
+    "Demonstração interativa com dados de exemplo",
+    "Segurança e ecossistema de logos",
+    "Consultoria e diferenciais em arco por scroll",
+    "Revelação da marca oficial no footer",
+    "Preview Docker local",
+    "Acessibilidade em painel ancorado não modal, com fechamento externo e Escape.",
+    "Soluções e Sobre como páginas próprias no menu; detalhes de serviço retornam ao contato com interesse selecionado.",
+    "Produtos sem miniaturas cortadas; processo com cenas planas e legíveis, sem material metálico.",
+    "Treze ferramentas no ecossistema; primeiro diferencial aguarda a chegada à seção.",
+    "Painel de acessibilidade conforme screenshot: leitura em voz alta, temas em botões, ajuste de texto, contraste preto/branco, pausa explícita e restaurar.",
+    "Movimento anterior em arco restaurado, removendo a janela de recorte dos cards.",
+    "Divisões curvas em capítulos selecionados; continuidade segurança/ecossistema preservada.",
+    "Cascata ampla de integrações acima e ao redor da mensagem, com entrada/saída por scroll e flutuação preservada.",
+    "Remover SaaS da comunicação pública; manter nomes comerciais de produtos contratáveis.",
+    "Centralizar o átomo no eixo da divisória da home em todas as larguras.",
+    "Navegação contextual de Soluções acompanha os materiais de cada seção, sem branco fixo sobre as áreas escuras.",
+    "Remover o CTA Vamos conversar do cabeçalho nas três páginas.",
+    "Perguntas com largura máxima de 440px; SVG + que gira para ×, sem fundo/borda, usando a cor do texto local e apenas uma resposta aberta."
+  ],
+  "publication": "Teste local; sem mudança de main ou dos sites publicados.",
+  "routes": [
+    "/",
+    "/solucoes/",
+    "/sobre/"
+  ]
+}

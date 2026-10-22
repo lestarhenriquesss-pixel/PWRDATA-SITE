@@ -1,0 +1,1653 @@
+{
+  "version": 5,
+  "surface": "website",
+  "identity": "pwrdata",
+  "mode": "refine",
+  "change_kind": "visual",
+  "brand_scope": "corporate",
+  "brief": {
+    "audience": "Empresas que precisam contratar produtos digitais, dados, consultoria ou integrações.",
+    "goal": "Refinar a composição e navegação PWR: escuro integral, apresentação escura do filme nos dois temas, painel ancorado completo, cascata de integrações, transições curvas e arco anterior restaurado sem a janela de recorte.",
+    "primary_action": "Descrever uma necessidade e preparar uma conversa comercial."
+  },
+  "preserved_sources": [
+    "site/assets/hero-loop.mp4",
+    "site/assets/hero-loop-mobile.mp4",
+    "site/assets/hero-poster.jpg",
+    "site/assets/atom.svg",
+    "site/assets/core.js",
+    "site/assets/visuals.js",
+    "site/assets/footer-wave.svg"
+  ],
+  "visual": {
+    "decision": "provided",
+    "theme": "dark",
+    "palette": [
+      "#E8601C",
+      "#1E2128",
+      "#C2500F",
+      "#B84A10",
+      "#FFFFFF",
+      "#F7F7F8",
+      "#bd8969",
+      "#fffaf2",
+      "#14161B",
+      "#1C1F25",
+      "#F07A3C"
+    ],
+    "palette_source": "Última orientação: entrada escura autorizada e escuro integral; claro mantém composição mista aprovada, contato cobre e footer #fffaf2.",
+    "available_themes": [
+      "light",
+      "dark"
+    ]
+  },
+  "typography": {
+    "preset": "pwr-website-inter",
+    "body_family": "Inter",
+    "heading_family": "Inter",
+    "body_css_family": "Inter",
+    "heading_css_family": "Inter",
+    "font_source": "Inter 4.1 local; SIL OFL 1.1; site/assets/fonts/source.json",
+    "scale": {
+      "body": {
+        "desktop": {
+          "px": 18,
+          "line_height": 28,
+          "weight": 400
+        },
+        "mobile": {
+          "px": 16,
+          "line_height": 26,
+          "weight": 400
+        }
+      },
+      "navigation": {
+        "desktop": {
+          "px": 16,
+          "line_height": 24,
+          "weight": 500
+        },
+        "mobile": {
+          "px": 18,
+          "line_height": 27,
+          "weight": 500
+        }
+      },
+      "section_heading": {
+        "desktop": {
+          "px": 56,
+          "line_height": 61.6,
+          "weight": 600
+        },
+        "mobile": {
+          "px": 36,
+          "line_height": 39.6,
+          "weight": 600
+        }
+      },
+      "heading": {
+        "desktop": {
+          "px": 76,
+          "line_height": 80.56,
+          "weight": 600
+        },
+        "mobile": {
+          "px": 44,
+          "line_height": 48.4,
+          "weight": 600
+        }
+      },
+      "meta": {
+        "desktop": {
+          "px": 14,
+          "line_height": 20,
+          "weight": 400
+        },
+        "mobile": {
+          "px": 14,
+          "line_height": 20,
+          "weight": 400
+        }
+      }
+    }
+  },
+  "motion": {
+    "preference": "expressive",
+    "layers": [
+      {
+        "id": "hero-film",
+        "role": "ambient",
+        "mechanism": "media",
+        "target": "#heroVideo",
+        "trigger": "Home visível.",
+        "effect": "Filme original em toda a abertura, com a mesma apresentação escura em ambos os temas do restante do site.",
+        "purpose": "Preservar a assinatura aprovada.",
+        "reduced_fallback": "Filme preservado em modo reduzido conforme decisão anterior; a nova pausa explícita, pedida no painel final, congela vídeo e partículas."
+      },
+      {
+        "id": "architecture",
+        "role": "narrative",
+        "mechanism": "svg-story",
+        "target": "#architectureStage",
+        "trigger": "Abrir o explorador e escolher uma camada.",
+        "effect": "Conjunto tridimensional abre texto e diagrama da camada, com retorno pelo mesmo controle.",
+        "purpose": "Aprofundar uma entrega sem repetir a explicação principal na página.",
+        "reduced_fallback": "Troca direta entre estados completos."
+      },
+      {
+        "id": "process",
+        "role": "narrative",
+        "mechanism": "product-demo",
+        "target": "#makingPanel",
+        "trigger": "Hover intencional, clique ou teclado nas etapas.",
+        "effect": "Brief de descoberta, wireframe, entrega em validação e linha de evolução em HTML legível e material plano.",
+        "purpose": "Explicar o trabalho e a participação do cliente.",
+        "reduced_fallback": "Troca imediata de cena e texto."
+      },
+      {
+        "id": "marquee",
+        "role": "ambient",
+        "mechanism": "ambient",
+        "target": ".marquee-track",
+        "trigger": "Faixa visível.",
+        "effect": "Possibilidades comerciais percorrem a faixa em 15 segundos.",
+        "purpose": "Ligar a abertura à oferta.",
+        "reduced_fallback": "Ritmo de 120 segundos preservado da versão anterior."
+      },
+      {
+        "id": "canvas-demo",
+        "role": "narrative",
+        "mechanism": "product-demo",
+        "target": "#canvasDemo",
+        "trigger": "Selecionar área ou pergunta de exemplo.",
+        "effect": "Pergunta, resposta, contexto, KPIs e gráfico mudam juntos; barras se montam por ponteiro.",
+        "purpose": "Mostrar o mecanismo do produto com dados identificados como exemplo.",
+        "reduced_fallback": "Valores e textos atualizam imediatamente, sem montagem animada."
+      },
+      {
+        "id": "security-flow",
+        "role": "ambient",
+        "mechanism": "svg-story",
+        "target": ".security-connector>span",
+        "trigger": "Segurança visível.",
+        "effect": "Conexões contínuas com pontos de opacidade suave, sem setas viajando entre os cards.",
+        "purpose": "Explicar o percurso do dado.",
+        "reduced_fallback": "Conexões e rótulos permanecem estáticos."
+      },
+      {
+        "id": "logo-cloud",
+        "role": "ambient",
+        "mechanism": "ambient",
+        "target": ".logo-tile",
+        "trigger": "Ecossistema visível.",
+        "effect": "Flutuação preservada em treze ferramentas: curva ampla acima da mensagem e cascata nas duas laterais; disposição escalonada abaixo do texto no celular.",
+        "purpose": "Identificar ferramentas e possibilidades de conexão.",
+        "reduced_fallback": "Logos estáticos, sem perda de conteúdo."
+      },
+      {
+        "id": "consulting-stream",
+        "role": "ambient",
+        "mechanism": "svg-story",
+        "target": ".consulting-art .stream-active",
+        "trigger": "Consultoria visível.",
+        "effect": "O caminho do dado é realçado nos desenhos de engenharia e BI.",
+        "purpose": "Relacionar a especialidade ao serviço.",
+        "reduced_fallback": "Diagrama completo estático."
+      },
+      {
+        "id": "why-arc",
+        "role": "narrative",
+        "mechanism": "scroll-story",
+        "target": "#whyTrack",
+        "trigger": "Chegada à seção, margem inicial de leitura e scroll nativo; controles ou teclado.",
+        "effect": "Movimento anterior em arco restaurado. A janela de recorte foi retirada e o espaço inferior acomoda os cards rotacionados.",
+        "purpose": "Apresentar os diferenciais com continuidade espacial.",
+        "reduced_fallback": "Lista horizontal sem rotação ou movimento automático por scroll."
+      },
+      {
+        "id": "footer-signature",
+        "role": "ambient",
+        "mechanism": "reveal",
+        "target": ".footer-signature img",
+        "trigger": "Footer visível pela primeira vez.",
+        "effect": "Máscara revela o asset oficial, sem redesenhar ou recolorir a marca.",
+        "purpose": "Concluir com a identidade visual em uma camada discreta.",
+        "reduced_fallback": "Marca inteira revelada imediatamente."
+      },
+      {
+        "id": "ecosystem-scroll",
+        "role": "ambient",
+        "mechanism": "scroll-story",
+        "target": ".ecosystem-slot",
+        "trigger": "Posição de cada ferramenta dentro do viewport durante a rolagem nativa.",
+        "effect": "Ícones entram por trajetórias suaves e saem pelas laterais; texto central permanece estável. Flutuação no elemento filho é independente.",
+        "purpose": "Enquadrar as ferramentas em torno da operação da empresa, com continuidade visual.",
+        "reduced_fallback": "Todas as ferramentas ficam visíveis em posição estática; a pausa explícita também usa a composição estática."
+      }
+    ]
+  },
+  "curation": {
+    "provider": {
+      "name": "21st",
+      "transport": "web",
+      "status": "available",
+      "queries": [
+        {
+          "query": "navigation menu dropdown light",
+          "result_ids": []
+        },
+        {
+          "query": "interactive tabs product showcase",
+          "result_ids": []
+        },
+        {
+          "query": "contact form footer",
+          "result_ids": []
+        },
+        {
+          "query": "site:21st.dev navigation menu tabs accordion contact form",
+          "result_ids": [
+            "https://21st.dev/@ln-dev7/components/faqs-02",
+            "https://21st.dev/@ln-dev7/components/animated-navigation-tabs"
+          ]
+        },
+        {
+          "query": "logo cloud integrations",
+          "result_ids": []
+        },
+        {
+          "query": "scroll card carousel",
+          "result_ids": []
+        },
+        {
+          "query": "site:21st.dev logo cloud integrations scroll cards",
+          "result_ids": [
+            "https://docs.21st.dev/@efferd/components/logo-cloud-5",
+            "https://docs.21st.dev/@efferd/components/integrations-4-2"
+          ]
+        },
+        {
+          "query": "anchored popover accessibility settings",
+          "result_ids": []
+        },
+        {
+          "query": "scroll morph hero",
+          "result_ids": []
+        },
+        {
+          "query": "marquee along svg path",
+          "result_ids": []
+        },
+        {
+          "query": "image stream hero",
+          "result_ids": []
+        }
+      ],
+      "reason": "Pesquisa MCP voltou a falhar no catálogo; a web forneceu candidatos de logos. Implementação própria na stack estática, sem incorporar preview/mídia/código do Ghost ou de componentes React.",
+      "capability_check": "Ferramentas search descobertas e chamadas; ausência de 21st CLI confirmada por Get-Command.",
+      "attempted_urls": [
+        "https://21st.dev/@ln-dev7/components/faqs-02",
+        "https://21st.dev/@ln-dev7/components/animated-navigation-tabs",
+        "https://blockus.lndevui.com/r/faqs-02.json",
+        "https://ui.lndev.me/components/vercel-navbar",
+        "https://ghost.org/",
+        "https://pwrdata.com.br/",
+        "https://efferd.com/blocks/logo-cloud"
+      ],
+      "transport_checks": [
+        {
+          "transport": "mcp",
+          "status": "attempted",
+          "method": "Três chamadas mcp__21st__search; mcp__21st__search: anchored popover accessibility settings",
+          "reason": "catalog search failed; nova tentativa: catalog search failed; API nativa e comportamento observado no site de referência foram escolhidos.; Três buscas específicas dos links fornecidos nesta revisão também retornaram catalog search failed."
+        },
+        {
+          "transport": "cli",
+          "status": "unavailable",
+          "method": "Get-Command 21st",
+          "reason": "CLI não instalada; instalação não necessária para continuar pela web."
+        },
+        {
+          "transport": "web",
+          "status": "available",
+          "method": "Busca web e abertura dos candidatos, páginas dos autores e fontes.",
+          "reason": "Metadados, exemplos de uso e licenças declaradas puderam ser lidos; fontes dos dois itens redirecionaram ou não abriram."
+        }
+      ]
+    },
+    "decision": {
+      "kind": "original",
+      "reason": "Implementação própria na stack estática, preservando a oferta aprovada. Painel nativo ancorado, cenas DOM e páginas institucionais resolvem o pedido sem importar um kit de efeitos."
+    },
+    "alternatives": [
+      {
+        "component": "Animated Navigation Tabs",
+        "source_url": "https://21st.dev/@ln-dev7/components/animated-navigation-tabs",
+        "decision": "rejected",
+        "reason": "Nova dependência de React/Motion e foco em underline; o tablist local já resolve a jornada."
+      },
+      {
+        "component": "Two-Column FAQ",
+        "source_url": "https://21st.dev/@ln-dev7/components/faqs-02",
+        "decision": "rejected",
+        "reason": "Conteúdo de suporte em duas colunas adicionaria estrutura desnecessária a três dúvidas já ligadas à captação."
+      },
+      {
+        "component": "Efferd Logo Cloud",
+        "source_url": "https://efferd.com/blocks/logo-cloud",
+        "decision": "rejected",
+        "reason": "Composição original com treze ferramentas e mensagem central; não exige React/Motion."
+      },
+      {
+        "component": "Popover API nativa",
+        "source_url": "https://developer.mozilla.org/en-US/docs/Web/API/Popover_API",
+        "decision": "selected-native",
+        "reason": "Primitiva do navegador para painel não modal, Escape e fechamento externo, sem acrescentar dependência. O painel do Diego foi observado em execução."
+      },
+      {
+        "component": "Scroll Morph Hero",
+        "source_url": "https://21st.dev/@prashantsom75/components/scroll-morph-hero",
+        "decision": "reference-only",
+        "reason": "Referência de transformação por scroll; não foi incorporada a composição de hero/círculo/arco. Página pública e uso consultados; fonte completa não recuperada pelo catálogo. Implementação original na stack estática."
+      },
+      {
+        "component": "Marquee Along SVG Path",
+        "source_url": "https://21st.dev/@danielpetho/components/marquee-along-svg-path",
+        "decision": "reference-only",
+        "reason": "Referência de trajetórias curvas; a circulação contínua e drag não correspondem à leitura estável da mensagem. Página pública e uso consultados; fonte completa não recuperada pelo catálogo. Implementação original na stack estática."
+      },
+      {
+        "component": "Image Stream Hero",
+        "source_url": "https://21st.dev/@ruixen.ui/components/image-stream-hero",
+        "decision": "reference-only",
+        "reason": "Referência de entrada e saída lateral; a perspectiva contínua foi substituída por movimento plano e discreto. Página pública e uso consultados; fonte completa não recuperada pelo catálogo. Implementação original na stack estática."
+      }
+    ],
+    "adoptions": [],
+    "blocked_source_fallback": null
+  },
+  "evidence": {
+    "keyboard": {
+      "status": "passed",
+      "method": "Chrome CDP com Tab, Escape, Home e controles de etapa.",
+      "target": "Navegação, popover, carrossel, detalhes e menu móvel.",
+      "result": "Tab entra no painel associado ao disparador; Escape retorna o foco. Teclado alterna cards e etapas."
+    },
+    "mobile": {
+      "status": "passed",
+      "method": "Chrome 155 com viewport e toque emulados, screenshots e DOM.",
+      "target": "Home em 320/390/768/1024/1440; páginas institucionais em 320/390/1024/1440, claro/escuro.",
+      "result": "Sem overflow ou imagens quebradas nos cenários observados. Rodada final reconferiu home 320/390/1440 e as três rotas em 390/1440. Sem aparelho físico."
+    },
+    "contrast": {
+      "status": "passed",
+      "method": "Luminância de cores computadas e revisão visual após estabilizar tema.",
+      "target": "CTAs, formulário e textos do footer; modo de alto contraste.",
+      "result": "CTAs gerais >=4.72:1. A rodada final mediu 32 pares no encerramento escuro, todos >=4.5:1; corrigiu textos que ainda herdavam marrom. Amostra, sem auditoria integral WCAG."
+    },
+    "font_loading": {
+      "status": "passed",
+      "method": "document.fonts e estilos computados, fonte local HTTP 200.",
+      "target": "Inter, títulos, navegação e corpo em 390/1440, ambos os temas.",
+      "result": "Fonte carregada; medidas reais atualizadas em observations.typography."
+    },
+    "journey": {
+      "status": "passed",
+      "method": "Navegação real e preparação do formulário, sem envio.",
+      "target": "Soluções → serviço pré-selecionado → contato; Canvas e detalhes.",
+      "result": "Seleção e descrição integral chegam ao mailto; demonstração permanece identificada como exemplo."
+    },
+    "reduced_motion": {
+      "status": "passed",
+      "method": "Emulação normal/reduzida e acionamento explícito de pausa/restaurar.",
+      "target": "Dez camadas de movimento e painel.",
+      "result": "Novas cenas trocam estados sem movimento em modo reduzido. Pausa explícita congela o vídeo e as partículas, e restaurar retoma o estado normal."
+    },
+    "visual_review": {
+      "status": "passed",
+      "method": "view_image de capturas reais e correções de leitura, contraste e recorte.",
+      "target": "Abertura, produtos, demonstração, cascata, processo, nova pilha, painel, contato/footer e páginas próprias.",
+      "result": "Painel conforme referência, escuro integral e topo escuro nos dois temas. Cascata lateral, curvas discretas e arco anterior restaurado sem a máscara de recorte. Cascata ampliada acima do texto, entrada e saída dos ícones observadas. Átomo alinhado ao eixo da divisória; comunicação pública sem SaaS.",
+      "reviewer": "agent",
+      "verdict": "pass",
+      "artifacts": [
+        {
+          "section_id": "ofertas",
+          "path": "review/screenshots/v4-light-1440-ofertas.png",
+          "viewport_width": 1440,
+          "theme": "light"
+        },
+        {
+          "section_id": "produtos",
+          "path": "review/screenshots/v4-light-1440-produtos.png",
+          "viewport_width": 1440,
+          "theme": "light"
+        },
+        {
+          "section_id": "arquitetura",
+          "path": "review/screenshots/v4-light-1440-arquitetura.png",
+          "viewport_width": 1440,
+          "theme": "light"
+        },
+        {
+          "section_id": "consultoria",
+          "path": "review/screenshots/v4-light-1440-consultoria.png",
+          "viewport_width": 1440,
+          "theme": "light"
+        },
+        {
+          "section_id": "processo",
+          "path": "review/screenshots/v4-light-1440-processo.png",
+          "viewport_width": 1440,
+          "theme": "light"
+        },
+        {
+          "section_id": "ofertas",
+          "path": "review/screenshots/v4-dark-1440-ofertas.png",
+          "viewport_width": 1440,
+          "theme": "dark"
+        },
+        {
+          "section_id": "produtos",
+          "path": "review/screenshots/v4-dark-1440-produtos.png",
+          "viewport_width": 1440,
+          "theme": "dark"
+        },
+        {
+          "section_id": "arquitetura",
+          "path": "review/screenshots/v4-dark-1440-arquitetura.png",
+          "viewport_width": 1440,
+          "theme": "dark"
+        },
+        {
+          "section_id": "consultoria",
+          "path": "review/screenshots/v4-dark-1440-consultoria.png",
+          "viewport_width": 1440,
+          "theme": "dark"
+        },
+        {
+          "section_id": "processo",
+          "path": "review/screenshots/v4-dark-1440-processo.png",
+          "viewport_width": 1440,
+          "theme": "dark"
+        },
+        {
+          "section_id": "ofertas",
+          "path": "review/screenshots/v4-light-390-ofertas.png",
+          "viewport_width": 390,
+          "theme": "light"
+        },
+        {
+          "section_id": "produtos",
+          "path": "review/screenshots/v4-light-390-produtos.png",
+          "viewport_width": 390,
+          "theme": "light"
+        },
+        {
+          "section_id": "arquitetura",
+          "path": "review/screenshots/v4-light-390-arquitetura.png",
+          "viewport_width": 390,
+          "theme": "light"
+        },
+        {
+          "section_id": "consultoria",
+          "path": "review/screenshots/v4-light-390-consultoria.png",
+          "viewport_width": 390,
+          "theme": "light"
+        },
+        {
+          "section_id": "processo",
+          "path": "review/screenshots/v4-light-390-processo.png",
+          "viewport_width": 390,
+          "theme": "light"
+        },
+        {
+          "section_id": "ofertas",
+          "path": "review/screenshots/v4-dark-390-ofertas.png",
+          "viewport_width": 390,
+          "theme": "dark"
+        },
+        {
+          "section_id": "produtos",
+          "path": "review/screenshots/v4-dark-390-produtos.png",
+          "viewport_width": 390,
+          "theme": "dark"
+        },
+        {
+          "section_id": "arquitetura",
+          "path": "review/screenshots/v4-dark-390-arquitetura.png",
+          "viewport_width": 390,
+          "theme": "dark"
+        },
+        {
+          "section_id": "consultoria",
+          "path": "review/screenshots/v4-dark-390-consultoria.png",
+          "viewport_width": 390,
+          "theme": "dark"
+        },
+        {
+          "section_id": "processo",
+          "path": "review/screenshots/v4-dark-390-processo.png",
+          "viewport_width": 390,
+          "theme": "dark"
+        },
+        {
+          "section_id": "por-que-pwr",
+          "path": "review/screenshots/v5-arc-light-1440.png",
+          "viewport_width": 1440,
+          "theme": "light"
+        },
+        {
+          "section_id": "por-que-pwr",
+          "path": "review/screenshots/v5-arc-dark-1440.png",
+          "viewport_width": 1440,
+          "theme": "dark"
+        },
+        {
+          "section_id": "canvas-demo",
+          "path": "review/screenshots/v5-demo-light-1440.png",
+          "viewport_width": 1440,
+          "theme": "light"
+        },
+        {
+          "section_id": "canvas-demo",
+          "path": "review/screenshots/v5-demo-dark-1440.png",
+          "viewport_width": 1440,
+          "theme": "dark"
+        },
+        {
+          "section_id": "por-que-pwr",
+          "path": "review/screenshots/v5-arc-light-1024.png",
+          "viewport_width": 1024,
+          "theme": "light"
+        },
+        {
+          "section_id": "por-que-pwr",
+          "path": "review/screenshots/v5-arc-dark-1024.png",
+          "viewport_width": 1024,
+          "theme": "dark"
+        },
+        {
+          "section_id": "por-que-pwr",
+          "path": "review/screenshots/v5-arc-light-390.png",
+          "viewport_width": 390,
+          "theme": "light"
+        },
+        {
+          "section_id": "por-que-pwr",
+          "path": "review/screenshots/v5-arc-dark-390.png",
+          "viewport_width": 390,
+          "theme": "dark"
+        },
+        {
+          "section_id": "canvas-demo",
+          "path": "review/screenshots/v5-demo-light-390.png",
+          "viewport_width": 390,
+          "theme": "light"
+        },
+        {
+          "section_id": "canvas-demo",
+          "path": "review/screenshots/v5-demo-dark-390.png",
+          "viewport_width": 390,
+          "theme": "dark"
+        },
+        {
+          "section_id": "por-que-pwr",
+          "path": "review/screenshots/v5-arc-light-320.png",
+          "viewport_width": 320,
+          "theme": "light"
+        },
+        {
+          "section_id": "por-que-pwr",
+          "path": "review/screenshots/v5-arc-dark-320.png",
+          "viewport_width": 320,
+          "theme": "dark"
+        },
+        {
+          "section_id": "solucoes",
+          "path": "review/screenshots/v4-current-solucoes-solucoes-1440.png",
+          "viewport_width": 1440,
+          "theme": "dark"
+        },
+        {
+          "section_id": "solucoes",
+          "path": "review/screenshots/v4-current-solucoes-solucoes-content-1440.png",
+          "viewport_width": 1440,
+          "theme": "dark"
+        },
+        {
+          "section_id": "sobre",
+          "path": "review/screenshots/v4-current-sobre-sobre-1440.png",
+          "viewport_width": 1440,
+          "theme": "dark"
+        },
+        {
+          "section_id": "sobre",
+          "path": "review/screenshots/v4-current-sobre-sobre-content-1440.png",
+          "viewport_width": 1440,
+          "theme": "dark"
+        },
+        {
+          "section_id": "solucoes",
+          "path": "review/screenshots/v4-current-solucoes-solucoes-390.png",
+          "viewport_width": 390,
+          "theme": "dark"
+        },
+        {
+          "section_id": "solucoes",
+          "path": "review/screenshots/v4-current-solucoes-solucoes-content-390.png",
+          "viewport_width": 390,
+          "theme": "dark"
+        },
+        {
+          "section_id": "sobre",
+          "path": "review/screenshots/v4-current-sobre-sobre-390.png",
+          "viewport_width": 390,
+          "theme": "dark"
+        },
+        {
+          "section_id": "sobre",
+          "path": "review/screenshots/v4-current-sobre-sobre-content-390.png",
+          "viewport_width": 390,
+          "theme": "dark"
+        },
+        {
+          "section_id": "contato",
+          "path": "review/screenshots/v4-light-1440-contato.png",
+          "viewport_width": 1440,
+          "theme": "light"
+        },
+        {
+          "section_id": "footer",
+          "path": "review/screenshots/v4-light-1440-footer.png",
+          "viewport_width": 1440,
+          "theme": "light"
+        },
+        {
+          "section_id": "contato",
+          "path": "review/screenshots/v4-light-390-contato.png",
+          "viewport_width": 390,
+          "theme": "light"
+        },
+        {
+          "section_id": "footer",
+          "path": "review/screenshots/v4-light-390-footer.png",
+          "viewport_width": 390,
+          "theme": "light"
+        },
+        {
+          "section_id": "contato",
+          "path": "review/screenshots/v4-light-320-contato.png",
+          "viewport_width": 320,
+          "theme": "light"
+        },
+        {
+          "section_id": "contato",
+          "path": "review/screenshots/v4-final-dark-1440-contato.png",
+          "viewport_width": 1440,
+          "theme": "dark"
+        },
+        {
+          "section_id": "footer",
+          "path": "review/screenshots/v4-final-dark-1440-footer.png",
+          "viewport_width": 1440,
+          "theme": "dark"
+        },
+        {
+          "section_id": "contato",
+          "path": "review/screenshots/v4-final-dark-390-contato.png",
+          "viewport_width": 390,
+          "theme": "dark"
+        },
+        {
+          "section_id": "footer",
+          "path": "review/screenshots/v4-final-dark-390-footer.png",
+          "viewport_width": 390,
+          "theme": "dark"
+        },
+        {
+          "section_id": "ecossistema",
+          "path": "review/screenshots/ecosystem-v2-light-1920.png",
+          "viewport_width": 1920,
+          "theme": "light"
+        },
+        {
+          "section_id": "ecossistema",
+          "path": "review/screenshots/ecosystem-v2-dark-1920.png",
+          "viewport_width": 1920,
+          "theme": "dark"
+        },
+        {
+          "section_id": "ecossistema",
+          "path": "review/screenshots/ecosystem-v2-light-1440.png",
+          "viewport_width": 1440,
+          "theme": "light"
+        },
+        {
+          "section_id": "ecossistema",
+          "path": "review/screenshots/ecosystem-v2-dark-1440.png",
+          "viewport_width": 1440,
+          "theme": "dark"
+        },
+        {
+          "section_id": "ecossistema",
+          "path": "review/screenshots/ecosystem-v2-light-1024.png",
+          "viewport_width": 1024,
+          "theme": "light"
+        },
+        {
+          "section_id": "ecossistema",
+          "path": "review/screenshots/ecosystem-v2-dark-1024.png",
+          "viewport_width": 1024,
+          "theme": "dark"
+        },
+        {
+          "section_id": "ecossistema",
+          "path": "review/screenshots/ecosystem-v2-light-820.png",
+          "viewport_width": 820,
+          "theme": "light"
+        },
+        {
+          "section_id": "ecossistema",
+          "path": "review/screenshots/ecosystem-v2-dark-820.png",
+          "viewport_width": 820,
+          "theme": "dark"
+        },
+        {
+          "section_id": "ecossistema",
+          "path": "review/screenshots/ecosystem-v2-light-768.png",
+          "viewport_width": 768,
+          "theme": "light"
+        },
+        {
+          "section_id": "ecossistema",
+          "path": "review/screenshots/ecosystem-v2-dark-768.png",
+          "viewport_width": 768,
+          "theme": "dark"
+        },
+        {
+          "section_id": "ecossistema",
+          "path": "review/screenshots/ecosystem-v2-light-390.png",
+          "viewport_width": 390,
+          "theme": "light"
+        },
+        {
+          "section_id": "ecossistema",
+          "path": "review/screenshots/ecosystem-v2-dark-390.png",
+          "viewport_width": 390,
+          "theme": "dark"
+        },
+        {
+          "section_id": "ecossistema",
+          "path": "review/screenshots/ecosystem-v2-light-320.png",
+          "viewport_width": 320,
+          "theme": "light"
+        },
+        {
+          "section_id": "ecossistema",
+          "path": "review/screenshots/ecosystem-v2-dark-320.png",
+          "viewport_width": 320,
+          "theme": "dark"
+        },
+        {
+          "section_id": "topo",
+          "path": "review/screenshots/hero-copy-atom-light-1440.png",
+          "viewport_width": 1440,
+          "theme": "light"
+        },
+        {
+          "section_id": "topo",
+          "path": "review/screenshots/hero-copy-atom-dark-1440.png",
+          "viewport_width": 1440,
+          "theme": "dark"
+        },
+        {
+          "section_id": "topo",
+          "path": "review/screenshots/hero-copy-atom-light-390.png",
+          "viewport_width": 390,
+          "theme": "light"
+        },
+        {
+          "section_id": "topo",
+          "path": "review/screenshots/hero-copy-atom-dark-390.png",
+          "viewport_width": 390,
+          "theme": "dark"
+        },
+        {
+          "section_id": "solucoes",
+          "path": "review/screenshots/solutions-index-light-1440.png",
+          "viewport_width": 1440,
+          "theme": "light"
+        },
+        {
+          "section_id": "solucoes",
+          "path": "review/screenshots/solutions-index-dark-1440.png",
+          "viewport_width": 1440,
+          "theme": "dark"
+        },
+        {
+          "section_id": "solucoes",
+          "path": "review/screenshots/solutions-index-light-390.png",
+          "viewport_width": 390,
+          "theme": "light"
+        },
+        {
+          "section_id": "solucoes",
+          "path": "review/screenshots/solutions-index-dark-390.png",
+          "viewport_width": 390,
+          "theme": "dark"
+        },
+        {
+          "section_id": "contato",
+          "path": "review/screenshots/faq-bare-light-1440.png",
+          "viewport_width": 1440,
+          "theme": "light"
+        },
+        {
+          "section_id": "contato",
+          "path": "review/screenshots/faq-bare-dark-1440.png",
+          "viewport_width": 1440,
+          "theme": "dark"
+        },
+        {
+          "section_id": "contato",
+          "path": "review/screenshots/faq-bare-light-390.png",
+          "viewport_width": 390,
+          "theme": "light"
+        },
+        {
+          "section_id": "contato",
+          "path": "review/screenshots/faq-bare-dark-390.png",
+          "viewport_width": 390,
+          "theme": "dark"
+        }
+      ]
+    },
+    "motion_observed": {
+      "status": "passed",
+      "method": "Medições temporais no navegador, incluindo ponteiro real nos cards.",
+      "target": "Onze camadas planejadas, normal e reduzido.",
+      "result": "24 observações temporais, incluindo quatro novas amostras de entrada/saída e modo reduzido do ecossistema em 390/1440px."
+    },
+    "links_and_forms": {
+      "status": "passed",
+      "method": "HTTP, arquivos/âncoras e jornadas no navegador.",
+      "target": "/, /solucoes/, /sobre/ e formulário local.",
+      "result": "Três rotas HTTP 200, assets locais, destinos institucionais e seleção de interesse conferidos; envio automático não existe."
+    },
+    "content_review": {
+      "status": "passed",
+      "method": "Leitura das páginas e referências do proprietário, com gate editorial.",
+      "target": "Ofertas, produtos, serviços e Sobre.",
+      "result": "Sem números decorativos, links de repositório, perfis inventados ou alegação de IA real na demonstração."
+    },
+    "social_links": {
+      "status": "not_run",
+      "method": "",
+      "target": "",
+      "result": ""
+    },
+    "accessibility_controls": {
+      "status": "passed",
+      "method": "Controles reais e integração da síntese de fala com stub em navegador separado.",
+      "target": "Painel, temas, texto, contraste, pausa e restauração.",
+      "result": "Texto ampliado, contraste aplicado e vídeo congelado/restaurado. Envio do texto à síntese, destaque e parar conferidos com stub; áudio real do sistema não validado."
+    },
+    "footer_hierarchy": {
+      "status": "passed",
+      "method": "Estilos computados em desktop/mobile e capturas nos dois temas.",
+      "target": "Títulos e links do footer.",
+      "result": "Títulos 20px e links 16px; claro conserva #fffaf2, escuro usa #14161b e texto correspondente."
+    }
+  },
+  "observations": {
+    "typography": [
+      {
+        "selector": ".hero h1",
+        "role": "heading",
+        "family": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "px": 80.64,
+        "line_height": 83.8656,
+        "weight": 600,
+        "viewport_width": 1440,
+        "theme": "light",
+        "font_scale": 1
+      },
+      {
+        "selector": ".experience-heading h2",
+        "role": "section-heading",
+        "family": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "px": 57.6,
+        "line_height": 64.512,
+        "weight": 600,
+        "viewport_width": 1440,
+        "theme": "light",
+        "font_scale": 1
+      },
+      {
+        "selector": ".hero-description",
+        "role": "body",
+        "family": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "px": 21,
+        "line_height": 33.6,
+        "weight": 400,
+        "viewport_width": 1440,
+        "theme": "light",
+        "font_scale": 1
+      },
+      {
+        "selector": ".nav-links a",
+        "role": "navigation",
+        "family": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "px": 16,
+        "line_height": 24,
+        "weight": 500,
+        "viewport_width": 1440,
+        "theme": "light",
+        "font_scale": 1
+      },
+      {
+        "selector": ".hero h1",
+        "role": "heading",
+        "family": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "px": 80.64,
+        "line_height": 83.8656,
+        "weight": 600,
+        "viewport_width": 1440,
+        "theme": "dark",
+        "font_scale": 1
+      },
+      {
+        "selector": ".experience-heading h2",
+        "role": "section-heading",
+        "family": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "px": 57.6,
+        "line_height": 64.512,
+        "weight": 600,
+        "viewport_width": 1440,
+        "theme": "dark",
+        "font_scale": 1
+      },
+      {
+        "selector": ".hero-description",
+        "role": "body",
+        "family": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "px": 21,
+        "line_height": 33.6,
+        "weight": 400,
+        "viewport_width": 1440,
+        "theme": "dark",
+        "font_scale": 1
+      },
+      {
+        "selector": ".nav-links a",
+        "role": "navigation",
+        "family": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "px": 16,
+        "line_height": 24,
+        "weight": 500,
+        "viewport_width": 1440,
+        "theme": "dark",
+        "font_scale": 1
+      },
+      {
+        "selector": ".hero h1",
+        "role": "heading",
+        "family": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "px": 44,
+        "line_height": 45.76,
+        "weight": 600,
+        "viewport_width": 390,
+        "theme": "light",
+        "font_scale": 1
+      },
+      {
+        "selector": ".experience-heading h2",
+        "role": "section-heading",
+        "family": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "px": 34,
+        "line_height": 38.08,
+        "weight": 600,
+        "viewport_width": 390,
+        "theme": "light",
+        "font_scale": 1
+      },
+      {
+        "selector": ".hero-description",
+        "role": "body",
+        "family": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "px": 16,
+        "line_height": 26.4,
+        "weight": 400,
+        "viewport_width": 390,
+        "theme": "light",
+        "font_scale": 1
+      },
+      {
+        "selector": ".nav-links a",
+        "role": "navigation",
+        "family": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "px": 18,
+        "line_height": 27,
+        "weight": 500,
+        "viewport_width": 390,
+        "theme": "light",
+        "font_scale": 1
+      },
+      {
+        "selector": ".hero h1",
+        "role": "heading",
+        "family": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "px": 44,
+        "line_height": 45.76,
+        "weight": 600,
+        "viewport_width": 390,
+        "theme": "dark",
+        "font_scale": 1
+      },
+      {
+        "selector": ".experience-heading h2",
+        "role": "section-heading",
+        "family": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "px": 34,
+        "line_height": 38.08,
+        "weight": 600,
+        "viewport_width": 390,
+        "theme": "dark",
+        "font_scale": 1
+      },
+      {
+        "selector": ".hero-description",
+        "role": "body",
+        "family": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "px": 16,
+        "line_height": 26.4,
+        "weight": 400,
+        "viewport_width": 390,
+        "theme": "dark",
+        "font_scale": 1
+      },
+      {
+        "selector": ".nav-links a",
+        "role": "navigation",
+        "family": "Inter, system-ui, -apple-system, \"Segoe UI\", sans-serif",
+        "px": 18,
+        "line_height": 27,
+        "weight": 500,
+        "viewport_width": 390,
+        "theme": "dark",
+        "font_scale": 1
+      }
+    ],
+    "components": [
+      {
+        "selector": "#readingDialog",
+        "method": "Popover, limites do viewport, Tab e Escape observados em 320/390/1440.",
+        "result": "Painel completo ancorado, não modal; controles de leitura e preferência funcionais."
+      },
+      {
+        "selector": ".why-viewport",
+        "method": "Oito cenários de viewport/tema, medindo cards visíveis e posição da legenda.",
+        "result": "Movimento anterior restaurado. Overflow visible no desktop, e nenhum card visível é cortado na borda inferior."
+      },
+      {
+        "selector": ".hero-offer > .orbit-marker",
+        "method": "DOM e capturas em sete larguras e ambos os temas.",
+        "result": "14 medições com diferença horizontal zero entre centro do átomo e centro da borda vertical; topo do eixo também coincide."
+      },
+      {
+        "selector": ".solution-index",
+        "method": "34 verificações de navegação/layout em 390/1440, claro/escuro, seis áreas, âncoras e footer.",
+        "result": "Fundo e cores correspondem à seção sob o índice; área ativa marcada, sem faixa branca sobre área escura. Índice oculto depois das soluções."
+      },
+      {
+        "selector": ".contact-questions .question-toggle",
+        "method": "Seis cenários: 320/390/1440px, nos dois temas, com abertura e Enter.",
+        "result": "Largura limitada a 440px; SVG + que gira para ×, sem fundo ou borda e com a cor do texto local. Apenas uma resposta aberta."
+      }
+    ],
+    "motion": [
+      {
+        "layer_id": "hero-film",
+        "selector": "#heroVideo",
+        "viewport_width": 1440,
+        "theme": "light",
+        "reduced": false,
+        "elapsed_ms": 650,
+        "method": "Chrome CDP; medição temporal do valor computado.",
+        "before": 3.049785,
+        "after": 3.707939
+      },
+      {
+        "layer_id": "logo-cloud",
+        "selector": ".logo-tile",
+        "viewport_width": 1440,
+        "theme": "light",
+        "reduced": false,
+        "elapsed_ms": 650,
+        "method": "Chrome CDP; medição temporal do valor computado.",
+        "before": "matrix(1, 0, 0, 1, 0, -0.932333)",
+        "after": "matrix(1, 0, 0, 1, 0, -3.71171)"
+      },
+      {
+        "layer_id": "consulting-stream",
+        "selector": ".consulting-art .stream-active",
+        "viewport_width": 1440,
+        "theme": "light",
+        "reduced": false,
+        "elapsed_ms": 650,
+        "method": "Chrome CDP; medição temporal do valor computado.",
+        "before": "-27.5542px",
+        "after": "-36.2208px"
+      },
+      {
+        "layer_id": "security-flow",
+        "selector": ".security-connector>span",
+        "viewport_width": 1440,
+        "theme": "light",
+        "reduced": false,
+        "elapsed_ms": 650,
+        "method": "Chrome CDP; medição temporal do valor computado.",
+        "before": "0.654212",
+        "after": "0.985312"
+      },
+      {
+        "layer_id": "marquee",
+        "selector": ".marquee-track",
+        "viewport_width": 1440,
+        "theme": "light",
+        "reduced": false,
+        "elapsed_ms": 650,
+        "method": "Chrome CDP; medição temporal do valor computado.",
+        "before": "matrix(1, 0, 0, 1, -1003.08, 0)",
+        "after": "matrix(1, 0, 0, 1, -1081.15, 0)"
+      },
+      {
+        "layer_id": "canvas-demo",
+        "selector": "#canvasDemo",
+        "viewport_width": 1440,
+        "theme": "light",
+        "reduced": false,
+        "elapsed_ms": 120,
+        "method": "Clique real de ponteiro; área e transform das barras antes/depois.",
+        "before": {
+          "area": "operations",
+          "transform": "none"
+        },
+        "after": {
+          "area": "sales",
+          "transform": "matrix(1, 0, 0, 0.34577, 0, 0)"
+        }
+      },
+      {
+        "layer_id": "process",
+        "selector": "#makingPanel",
+        "viewport_width": 1440,
+        "theme": "light",
+        "reduced": false,
+        "elapsed_ms": 450,
+        "method": "Seleção de etapa e leitura do estado completo.",
+        "before": "understand",
+        "after": "build"
+      },
+      {
+        "layer_id": "architecture",
+        "selector": "#architectureStage",
+        "viewport_width": 1440,
+        "theme": "light",
+        "reduced": false,
+        "elapsed_ms": 500,
+        "method": "Explorador aberto, escolha de camada e estado medido antes/depois.",
+        "before": false,
+        "after": true
+      },
+      {
+        "layer_id": "footer-signature",
+        "selector": ".footer-signature img",
+        "viewport_width": 1440,
+        "theme": "light",
+        "reduced": false,
+        "elapsed_ms": 2100,
+        "method": "Clip-path computado no início e fim da revelação da marca oficial.",
+        "before": "inset(0px 62.0351% 0px 0px)",
+        "after": "inset(0px)"
+      },
+      {
+        "layer_id": "hero-film",
+        "selector": "#heroVideo",
+        "viewport_width": 1440,
+        "theme": "light",
+        "reduced": true,
+        "elapsed_ms": 650,
+        "method": "Chrome CDP; medição temporal do valor computado.",
+        "before": 3.022375,
+        "after": 3.675259
+      },
+      {
+        "layer_id": "logo-cloud",
+        "selector": ".logo-tile",
+        "viewport_width": 1440,
+        "theme": "light",
+        "reduced": true,
+        "elapsed_ms": 650,
+        "method": "Chrome CDP; medição temporal do valor computado.",
+        "before": "none",
+        "after": "none"
+      },
+      {
+        "layer_id": "consulting-stream",
+        "selector": ".consulting-art .stream-active",
+        "viewport_width": 1440,
+        "theme": "light",
+        "reduced": true,
+        "elapsed_ms": 650,
+        "method": "Chrome CDP; medição temporal do valor computado.",
+        "before": "0px",
+        "after": "0px"
+      },
+      {
+        "layer_id": "security-flow",
+        "selector": ".security-connector>span",
+        "viewport_width": 1440,
+        "theme": "light",
+        "reduced": true,
+        "elapsed_ms": 650,
+        "method": "Chrome CDP; medição temporal do valor computado.",
+        "before": "1",
+        "after": "1"
+      },
+      {
+        "layer_id": "marquee",
+        "selector": ".marquee-track",
+        "viewport_width": 1440,
+        "theme": "light",
+        "reduced": true,
+        "elapsed_ms": 650,
+        "method": "Chrome CDP; medição temporal do valor computado.",
+        "before": "matrix(1, 0, 0, 1, -124.41, 0)",
+        "after": "matrix(1, 0, 0, 1, -134.167, 0)"
+      },
+      {
+        "layer_id": "canvas-demo",
+        "selector": "#canvasDemo",
+        "viewport_width": 1440,
+        "theme": "light",
+        "reduced": true,
+        "elapsed_ms": 120,
+        "method": "Clique real de ponteiro; área e transform das barras antes/depois.",
+        "before": {
+          "area": "operations",
+          "transform": "none"
+        },
+        "after": {
+          "area": "sales",
+          "transform": "none"
+        }
+      },
+      {
+        "layer_id": "process",
+        "selector": "#makingPanel",
+        "viewport_width": 1440,
+        "theme": "light",
+        "reduced": true,
+        "elapsed_ms": 450,
+        "method": "Seleção de etapa e leitura do estado completo.",
+        "before": "understand",
+        "after": "build"
+      },
+      {
+        "layer_id": "architecture",
+        "selector": "#architectureStage",
+        "viewport_width": 1440,
+        "theme": "light",
+        "reduced": true,
+        "elapsed_ms": 500,
+        "method": "Explorador aberto, escolha de camada e estado medido antes/depois.",
+        "before": false,
+        "after": true
+      },
+      {
+        "layer_id": "footer-signature",
+        "selector": ".footer-signature img",
+        "viewport_width": 1440,
+        "theme": "light",
+        "reduced": true,
+        "elapsed_ms": 2100,
+        "method": "Clip-path computado no início e fim da revelação da marca oficial.",
+        "before": "none",
+        "after": "none"
+      },
+      {
+        "layer_id": "why-arc",
+        "selector": "#whyTrack",
+        "viewport_width": 1440,
+        "theme": "dark",
+        "reduced": false,
+        "elapsed_ms": 250,
+        "method": "Chegada e scroll real com 100px de leitura e 400px adicionais.",
+        "before": "matrix(1, 0, 0, 1, 555, 0)",
+        "after": "matrix(1, 0, 0, 1, 181.687, 0)"
+      },
+      {
+        "layer_id": "why-arc",
+        "selector": "#whyTrack",
+        "viewport_width": 1440,
+        "theme": "dark",
+        "reduced": true,
+        "elapsed_ms": 250,
+        "method": "Chegada e scroll real com 100px de leitura e 400px adicionais.",
+        "before": "none",
+        "after": "none"
+      },
+      {
+        "layer_id": "ecosystem-scroll",
+        "selector": ".ecosystem-slot",
+        "viewport_width": 1440,
+        "theme": "dark",
+        "reduced": false,
+        "elapsed_ms": 390,
+        "method": "Scroll real até entrada, leitura e saída do primeiro ícone.",
+        "before": {
+          "state": "enter",
+          "transform": "translate3d(calc(-50% - 77px), 38.89px, 0px) rotate(-4.86deg) scale(0.9563)",
+          "opacity": 0.0278
+        },
+        "after": {
+          "state": "exit",
+          "transform": "translate3d(calc(-50% - 55px), -28px, 0px) rotate(3deg) scale(0.975)",
+          "opacity": 0
+        },
+        "samples": [
+          {
+            "state": "enter",
+            "transform": "translate3d(calc(-50% - 77px), 38.89px, 0px) rotate(-4.86deg) scale(0.9563)",
+            "opacity": 0.0278
+          },
+          {
+            "state": "visible",
+            "transform": "translate3d(calc(-50% + 0px), 0px, 0px) rotate(0deg) scale(1)",
+            "opacity": 1
+          },
+          {
+            "state": "exit",
+            "transform": "translate3d(calc(-50% - 55px), -28px, 0px) rotate(3deg) scale(0.975)",
+            "opacity": 0
+          }
+        ]
+      },
+      {
+        "layer_id": "ecosystem-scroll",
+        "selector": ".ecosystem-slot",
+        "viewport_width": 1440,
+        "theme": "dark",
+        "reduced": true,
+        "elapsed_ms": 130,
+        "method": "Preferência reduzida e scroll real; ferramentas permanecem visíveis.",
+        "before": {
+          "transform": "translate3d(-50%, 0px, 0px)",
+          "opacity": "1"
+        },
+        "after": {
+          "transform": "translate3d(-50%, 0px, 0px)",
+          "opacity": "1"
+        }
+      },
+      {
+        "layer_id": "ecosystem-scroll",
+        "selector": ".ecosystem-slot",
+        "viewport_width": 390,
+        "theme": "dark",
+        "reduced": false,
+        "elapsed_ms": 390,
+        "method": "Scroll real até entrada, leitura e saída do primeiro ícone.",
+        "before": {
+          "state": "enter",
+          "transform": "translate3d(calc(-50% + 0px), 38.9px, 0px) rotate(0deg) scale(0.9562)",
+          "opacity": 0.0274
+        },
+        "after": {
+          "state": "exit",
+          "transform": "translate3d(calc(-50% + 0px), -28px, 0px) rotate(0deg) scale(0.975)",
+          "opacity": 0
+        },
+        "samples": [
+          {
+            "state": "enter",
+            "transform": "translate3d(calc(-50% + 0px), 38.9px, 0px) rotate(0deg) scale(0.9562)",
+            "opacity": 0.0274
+          },
+          {
+            "state": "visible",
+            "transform": "translate3d(calc(-50% + 0px), 0px, 0px) rotate(0deg) scale(1)",
+            "opacity": 1
+          },
+          {
+            "state": "exit",
+            "transform": "translate3d(calc(-50% + 0px), -28px, 0px) rotate(0deg) scale(0.975)",
+            "opacity": 0
+          }
+        ]
+      },
+      {
+        "layer_id": "ecosystem-scroll",
+        "selector": ".ecosystem-slot",
+        "viewport_width": 390,
+        "theme": "dark",
+        "reduced": true,
+        "elapsed_ms": 130,
+        "method": "Preferência reduzida e scroll real; ferramentas permanecem visíveis.",
+        "before": {
+          "transform": "translate3d(-50%, 0px, 0px)",
+          "opacity": "1"
+        },
+        "after": {
+          "transform": "translate3d(-50%, 0px, 0px)",
+          "opacity": "1"
+        }
+      }
+    ],
+    "dialogs": [
+      {
+        "selector": "#detailModal",
+        "method": "Abertura de etapa e captura de tela em 390/1440.",
+        "result": "Fechamento acessível; um dono de rolagem no celular.",
+        "background_locked": true,
+        "scroll_owners": 1,
+        "measurement": "390×844: clientHeight 818px, scrollHeight 1102px na etapa Evoluir."
+      }
+    ]
+  },
+  "site_design": {
+    "premise": "Produtos próprios, serviços e arquitetura apresentados como uma entrega conectada, com demonstração legível e próximo passo comercial.",
+    "primary_action": "Descrever uma ideia e preparar um e-mail comercial.",
+    "signature_section": "canvas-demo",
+    "sections": [
+      {
+        "id": "topo",
+        "role": "introduction",
+        "buyer_question": "O que a empresa pode criar para mim?",
+        "composition": "Apresentação escura da animação nos dois temas, oferta vazada e navegação aberta. O restante do site obedece ao tema selecionado. Cabeçalho sem o botão Vamos conversar; ações comerciais permanecem na home e no footer.",
+        "composition_family": "media",
+        "content": "Seu negócio. Novas possibilidades.",
+        "purpose": "O que a empresa pode criar para mim?",
+        "tone": "Comercial, concreto e legível."
+      },
+      {
+        "id": "ofertas",
+        "role": "offer",
+        "buyer_question": "O que posso contratar?",
+        "composition": "Preserva a grade de três serviços aprovada, com modais e novas setas.",
+        "composition_family": "card-grid",
+        "content": "Você imagina. Nós criamos.",
+        "purpose": "O que posso contratar?",
+        "tone": "Comercial, concreto e legível.",
+        "repetition_reason": "Ofertas paralelas comparáveis; consultoria explica execução e é distinta dos serviços prontos."
+      },
+      {
+        "id": "produtos",
+        "role": "products",
+        "buyer_question": "Quais produtos próprios já existem?",
+        "composition": "Dois cards amplos com marca oficial, proposta, benefícios e destinos reais, sem miniaturas inferiores cortadas.",
+        "composition_family": "comparison",
+        "content": "Uma conversa gera análise; a inteligência permanece sob controle.",
+        "purpose": "Quais produtos próprios já existem?",
+        "tone": "Comercial, concreto e legível."
+      },
+      {
+        "id": "canvas-demo",
+        "role": "signature",
+        "buyer_question": "Como a pergunta se transforma em análise?",
+        "composition": "Conversa e painel compartilham o mesmo estado, com áreas, perguntas reconhecidas e gráficos de exemplo.",
+        "composition_family": "demo",
+        "content": "Operações, Comercial e Financeiro; dados ilustrativos.",
+        "purpose": "Como a pergunta se transforma em análise?",
+        "tone": "Comercial, concreto e legível."
+      },
+      {
+        "id": "arquitetura",
+        "role": "security",
+        "buyer_question": "Onde meus dados e modelos operam?",
+        "composition": "Percurso com sistemas, Íris e aplicações dentro do ambiente; explorador de arquitetura opcional.",
+        "composition_family": "sequence",
+        "content": "Dentro da sua empresa. Sob as suas regras.",
+        "purpose": "Onde meus dados e modelos operam?",
+        "tone": "Comercial, concreto e legível."
+      },
+      {
+        "id": "ecossistema",
+        "role": "integrations",
+        "buyer_question": "Como isso se conecta ao que já uso?",
+        "composition": "Curva ampla de ferramentas acima da mensagem, com cascata descendo pelas laterais; entrada e saída por scroll e flutuação independente. Layout compacto no celular.",
+        "composition_family": "media",
+        "content": "Ferramentas de referência, com integração avaliada por projeto.",
+        "purpose": "Como isso se conecta ao que já uso?",
+        "tone": "Comercial, concreto e legível."
+      },
+      {
+        "id": "consultoria",
+        "role": "services",
+        "buyer_question": "Quem organiza o que está por trás?",
+        "composition": "Seis especialidades com acesso aos detalhes correspondentes em /solucoes/; CTA de cada solução pré-seleciona o interesse comercial.",
+        "composition_family": "card-grid",
+        "content": "Engenharia, BI, IA aplicada, integrações, produtos digitais e cloud.",
+        "purpose": "Quem organiza o que está por trás?",
+        "tone": "Comercial, concreto e legível.",
+        "repetition_reason": "Ofertas paralelas comparáveis; consultoria explica execução e é distinta dos serviços prontos."
+      },
+      {
+        "id": "processo",
+        "role": "process",
+        "buyer_question": "Como a ideia ganha forma?",
+        "composition": "Brief, wireframe, validação e evolução em cenas HTML planas, com controles existentes, entrada escalonada e teclado.",
+        "composition_family": "sequence",
+        "content": "Entender, desenhar, construir e evoluir.",
+        "purpose": "Como a ideia ganha forma?",
+        "tone": "Comercial, concreto e legível."
+      },
+      {
+        "id": "por-que-pwr",
+        "role": "differentiation",
+        "buyer_question": "Por que escolher a Power Data?",
+        "composition": "Arco anterior restaurado, sem janela de recorte vertical e com margem inferior para todos os cards. Primeiro card aguarda leitura; lista horizontal no celular.",
+        "composition_family": "sequence",
+        "content": "Dados no ambiente, português, contexto e entrega do ERP ao produto.",
+        "purpose": "Por que escolher a Power Data?",
+        "tone": "Comercial, concreto e legível."
+      },
+      {
+        "id": "contato",
+        "role": "closing",
+        "buyer_question": "Como começamos uma conversa?",
+        "composition": "Composição anterior em cobre, formulário com serviço e mensagem completa, incluindo IA aplicada.",
+        "composition_family": "split",
+        "content": "Tem uma ideia? Vamos dar forma a ela.",
+        "purpose": "Como começamos uma conversa?",
+        "tone": "Comercial, concreto e legível."
+      },
+      {
+        "id": "footer",
+        "role": "footer",
+        "buyer_question": "Onde encontro serviços e próximos passos?",
+        "composition": "Composição de navegação anterior, onda #fffaf2, canais monocromáticos e marca oficial revelada.",
+        "composition_family": "footer",
+        "content": "Produtos, especialidades, arquitetura, processo, contato e acessibilidade.",
+        "purpose": "Onde encontro serviços e próximos passos?",
+        "tone": "Comercial, concreto e legível."
+      },
+      {
+        "id": "solucoes",
+        "role": "institutional-page",
+        "buyer_question": "Que solução atende a minha necessidade?",
+        "composition": "Página própria de seis especialidades, com público, entregas e chamadas contextualizadas.",
+        "composition_family": "sequence",
+        "content": "Engenharia, BI, IA, integrações, produtos e cloud.",
+        "purpose": "Aprofundar conteúdo institucional por navegação, sem ampliar a home.",
+        "tone": "Comercial e direto."
+      },
+      {
+        "id": "sobre",
+        "role": "institutional-page",
+        "buyer_question": "Quem é a Power Data e como trabalha?",
+        "composition": "Página própria de propósito, missão, visão, trajetória e valores.",
+        "composition_family": "sequence",
+        "content": "Produtos próprios e consultoria no contexto real da empresa.",
+        "purpose": "Aprofundar conteúdo institucional por navegação, sem ampliar a home.",
+        "tone": "Comercial e direto."
+      }
+    ],
+    "interaction": {
+      "section_id": "canvas-demo",
+      "action": "Selecionar uma área ou uma pergunta reconhecida na demonstração.",
+      "outcome": "Pergunta, contexto, indicadores e gráfico mudam de forma correspondente, sem simular acesso a IA real.",
+      "reduced_fallback": "Atualização direta com todos os valores e textos."
+    },
+    "public_essentials": {
+      "accessibility": {
+        "entry_point": "#openReading no cabeçalho, também acessível pelo footer",
+        "implementation": "Popover nativo ancorado e não modal nas três páginas; sem backdrop, bloqueio de rolagem ou inércia no fundo.",
+        "controls": [
+          "Leitura em voz alta pela síntese do navegador, com trecho destacado e botão parar.",
+          "Claro, escuro e automático em botões visíveis.",
+          "Texto 100%, 112%, 125% e 150%, com limites e restaurar.",
+          "Alto contraste: fundo preto, texto branco, links sublinhados.",
+          "Pausa explícita de vídeo, partículas e movimentos.",
+          "Tab entra no painel, Escape devolve foco; fechamento externo nativo."
+        ]
+      },
+      "footer": {
+        "heading_rule": "Títulos semânticos 20px, links 16px; claro #fffaf2 e escuro #14161b, com contraste correspondente."
+      }
+    },
+    "pages": [
+      {
+        "path": "/solucoes/",
+        "purpose": "Explicar as seis frentes de serviço, para quem servem, entregas e início do trabalho.",
+        "action": "Retornar ao contato com serviço pré-selecionado.",
+        "navigation": "Índice sticky usa o tema da seção sob ele, marca a área atual e deixa de aparecer após as soluções, antes do encerramento."
+      },
+      {
+        "path": "/sobre/",
+        "purpose": "Apresentar propósito, missão, visão, trajetória e princípios de trabalho.",
+        "action": "Conhecer as soluções ou iniciar uma conversa."
+      }
+    ]
+  },
+  "catalog": {
+    "transaction_mode": null,
+    "decision": "pending",
+    "price_source": null
+  },
+  "integration_notes": {
+    "social_channels": "Perfis sem URL permanecem com o aviso e alternativa existentes. Não foram inventados destinos.",
+    "canvas": "Demonstração local com dados de exemplo e perguntas reconhecidas; não há API de IA ou acesso a dados da empresa.",
+    "physical_device": "Não executado; emulação Chrome.",
+    "publication": "Somente branch experimental e preview Docker local; sem push, merge ou publicação.",
+    "official_logos": "Treze ferramentas; RD Station e Omie com arquivos oficiais. Ícones históricos do Simple Icons 11.15.0. Entra ID aparece por escrito: pacote oficial consultado não permite uso de marketing dos ícones.",
+    "references": "Iris em http://127.0.0.1:5181/#inicio para alternância de superfícies; /solucoes e /sobre do domínio principal e painel de acessibilidade observados em Chrome 155.",
+    "voice": "Síntese de fala do navegador; lógica e destaque testados com stub. Voz audível do sistema não validada.",
+    "video_reference": "video 1.mp4 não encontrado em C:/Users/Play/Downloads em nenhum dos dois acessos locais. Movimento reformulado a partir do screenshot e da descrição, sem alegar inspeção do vídeo.",
+    "latest_direction": "Pilha de cards descartada a pedido do usuário. Movimento anterior restaurado com apenas a correção do recorte. Topo mantém apresentação escura mesmo no modo claro.",
+    "ecosystem_reference": "Screenshot e três páginas 21st fornecidos pelo usuário. Implementação própria; sem copiar TSX, mídia ou instalar React/Motion. Catálogo MCP indisponível, páginas públicas lidas.",
+    "copy": "SaaS removido do texto público, labels rotativos, descrições comerciais e metadados. Nomes BI EMBEDDED e E-COMMERCE conferidos após troca real do destaque."
+  }
+}

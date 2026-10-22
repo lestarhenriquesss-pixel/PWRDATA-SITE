@@ -7,7 +7,7 @@
   function enter(container,instant=false){
     const previous=animations.get(container);if(previous)previous.kill();animations.delete(container);
     const nodes=[...container.querySelectorAll('.scene-node')];if(!nodes.length)return;
-    if(!engine||reduced.matches||instant||document.hidden){if(engine)engine.set(nodes,{clearProps:'transform,opacity'});return}
+    if(!engine||reduced.matches||instant||document.hidden||window.PWRMotionPaused){if(engine)engine.set(nodes,{clearProps:'transform,opacity'});return}
     const timeline=engine.timeline({onComplete:()=>{if(animations.get(container)===timeline)animations.delete(container)}});
     timeline.fromTo(nodes,{opacity:.12,transform:'translateY(12px)'},{opacity:1,transform:'translateY(0)',duration:.44,stagger:.045,ease:'pwrOut',clearProps:'transform,opacity'});
     animations.set(container,timeline);
@@ -42,10 +42,10 @@
   $('arquitetura').addEventListener('keydown',event=>{if(event.key==='Escape'&&selected){event.preventDefault();closeArchitecture(true,true)}});
 
   const phases={
-    understand:{label:'O ponto de partida',title:'Uma pergunta.<br>Uma direção.',text:'Ouvimos sua ideia e entendemos o que precisa mudar para quem vai usar.',output:'Objetivo, pessoas e prioridades.'},
-    design:{label:'O desenho da criação',title:'A intenção<br>ganha estrutura.',text:'Jornada, identidade e arquitetura viram um desenho que você consegue avaliar.',output:'Experiência, conexões e plano.'},
-    build:{label:'As partes ganham função',title:'O desenho<br>começa a funcionar.',text:'Construímos interface, regras e conexões. Cada entrega passa por validação.',output:'Produto, integração e testes.'},
-    evolve:{label:'A criação em movimento',title:'No ar.<br>E pronta para evoluir.',text:'Publicamos, acompanhamos o uso e combinamos os próximos passos.',output:'Operação, cuidado e evolução.'}
+    understand:{label:'O ponto de partida',title:'Uma pergunta. <br>Uma direção.',text:'Ouvimos sua ideia e entendemos o que precisa mudar para quem vai usar.',output:'Objetivo, pessoas e prioridades.'},
+    design:{label:'O desenho da criação',title:'A intenção <br>ganha estrutura.',text:'Jornada, identidade e arquitetura viram um desenho que você consegue avaliar.',output:'Experiência, conexões e plano.'},
+    build:{label:'As partes ganham função',title:'O desenho <br>começa a funcionar.',text:'Construímos interface, regras e conexões. Cada entrega passa por validação.',output:'Produto, integração e testes.'},
+    evolve:{label:'A criação em movimento',title:'No ar. <br>E pronta para evoluir.',text:'Publicamos, acompanhamos o uso e combinamos os próximos passos.',output:'Operação, cuidado e evolução.'}
   };
   const phaseTabs=[...document.querySelectorAll('[data-phase]')];let phase=null,phaseHover=null;
   function cancelPhaseHover(){if(phaseHover!==null)clearTimeout(phaseHover);phaseHover=null}
@@ -78,10 +78,10 @@
     cancelPhaseHover();if(reduced.matches)settleMotion();else if(!selected&&engine)engine.set(panel,{clearProps:'transform'});
   });
   watchPreference(fine,()=>{cancelPhaseHover();if(!fine.matches)delete stage.dataset.preview});
+  addEventListener('pwr:motion-change',()=>{if(window.PWRMotionPaused)settleMotion()});
   document.addEventListener('visibilitychange',()=>{
     document.body.classList.toggle('tab-sleeping',document.hidden);
     if(document.hidden){cancelPhaseHover();settleMotion()}
   });
-  const back=$('backTop');let backVisible=false;function updateBack(){const next=scrollY>240;if(next!==backVisible){backVisible=next;back.hidden=!next}}addEventListener('scroll',updateBack,{passive:true});updateBack();
   const cardObserver=new IntersectionObserver(entries=>entries.forEach(entry=>entry.target.classList.toggle('scene-live',entry.isIntersecting)),{threshold:.15});document.querySelectorAll('.creation-card,.making-board').forEach(el=>cardObserver.observe(el));
 })();
